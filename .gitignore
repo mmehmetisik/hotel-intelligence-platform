@@ -71,3 +71,4 @@ credentials.json
 # Cache
 .cache/
 diskcache/
+catboost_info/
