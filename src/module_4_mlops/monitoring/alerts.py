@@ -9,6 +9,7 @@ Threshold-based alerting for model and data monitoring:
 """
 
 import logging
+import pandas as pd
 from datetime import datetime
 from typing import Optional
 from dataclasses import dataclass, field
@@ -221,9 +222,8 @@ class AlertManager:
             "categories": list(set(a.category for a in active)),
         }
 
-    def get_alerts_df(self) -> "pd.DataFrame":
+    def get_alerts_df(self) -> pd.DataFrame:
         """Get all alerts as a DataFrame."""
-        import pandas as pd
         if not self.alerts:
             return pd.DataFrame()
 
