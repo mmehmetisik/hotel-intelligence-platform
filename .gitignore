@@ -36,6 +36,7 @@ data/raw/*.xlsx
 data/processed/*.csv
 data/processed/*.pkl
 data/processed/*.parquet
+data/synthetic/*.csv
 
 # MLflow
 mlruns/
