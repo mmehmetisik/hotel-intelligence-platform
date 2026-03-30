@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p data/raw data/processed data/synthetic)",
+      "Bash(mkdir -p src/module_1_predictive/cancellation src/module_1_predictive/cltv src/module_1_predictive/clustering)",
+      "Bash(mkdir -p src/module_2_llm/invoice_classification src/module_2_llm/master_item_cleanup src/module_2_llm/review_analysis)",
+      "Bash(mkdir -p src/module_3_conversational/agents src/module_3_conversational/llm src/module_3_conversational/database src/module_3_conversational/prompts src/module_3_conversational/utils)",
+      "Bash(mkdir -p src/module_4_mlops/tracking src/module_4_mlops/monitoring src/module_4_mlops/pipeline)"
+    ]
+  }
+}

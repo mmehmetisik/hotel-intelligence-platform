@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files (large)
+data/raw/*.csv
+data/raw/*.xlsx
+data/processed/*.csv
+data/processed/*.pkl
+data/processed/*.parquet
+
+# MLflow
+mlruns/
+mlflow/
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+logs/
+
+# Model artifacts
+models/
+*.pkl
+*.joblib
+*.h5
+
+# Secrets
+*.pem
+*.key
+credentials.json
+
+# Cache
+.cache/
+diskcache/
