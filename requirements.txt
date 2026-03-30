@@ -8,7 +8,7 @@ scikit-learn>=1.3
 xgboost>=2.0
 lightgbm>=4.0
 catboost>=1.2
-btyd>=0.1
+btyd>=0.1a1  # CLTV modeling (pre-release, install with --pre if needed)
 
 # LLM
 groq>=0.4
