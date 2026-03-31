@@ -144,9 +144,8 @@ if invoices_path.exists():
 
         if user_input and st.button("🔍 Classify", use_container_width=True):
             try:
-                from src.module_2_llm.invoice_classification.rule_based import RuleBasedClassifier
-                classifier = RuleBasedClassifier()
-                result = classifier.classify(user_input)
+                from src.module_2_llm.invoice_classification.rule_based import classify_rule_based
+                result = classify_rule_based(user_input)
 
                 st.markdown(f"""
                 <div class="premium-card" style="text-align: center;">
