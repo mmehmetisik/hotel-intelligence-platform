@@ -19,13 +19,16 @@ A comprehensive AI/ML platform designed for hotel chains, covering the full data
 
 | Metric | Value |
 |--------|-------|
-| Cancellation Prediction AUC-ROC | **0.9467** (XGBoost) |
-| Invoice Classification Accuracy | **96.8%** (LLM Few-Shot) |
-| Rule-Based Classification | **92.65%** (near-zero latency) |
-| Customer Segments Identified | **6** (RFM-based) |
-| Potential Revenue Savings | **€2M+** annually |
-| ML Models Trained & Compared | **5** |
+| Cancellation Prediction AUC-ROC | **0.9465** (XGBoost) |
+| Estimated Annual Revenue Impact | **EUR 13.9M+** |
+| Invoice Classification (ML) | **100.0%** (TF-IDF + LogReg) |
+| Invoice Classification (Rule-Based) | **92.65%** (79K rows/sec) |
+| Master Item Match Rate | **96.08%** (4-layer hybrid pipeline) |
+| Sentiment Analysis (ML) | **100.0%** (GradientBoosting) |
+| Customer Lifetime Value | **7,993** customers scored (mean USD 1,742) |
+| CLTV Segments | **4** (Low, Medium, High, VIP) |
 | Features Engineered | **62** |
+| ML Models Trained & Compared | **5** |
 | Languages Supported (UI) | **3** (EN/TR/DE) |
 
 ---
@@ -36,19 +39,20 @@ A comprehensive AI/ML platform designed for hotel chains, covering the full data
 
 **Booking cancellation prediction, CLTV modeling, and customer segmentation.**
 
-- **Cancellation Prediction**: 5 models (Logistic Regression, Random Forest, XGBoost, LightGBM, CatBoost) with 62 engineered features. Best: XGBoost with AUC-ROC 0.9467.
-- **CLTV Modeling**: BG-NBD + Gamma-Gamma probabilistic models for customer lifetime value prediction using the btyd library.
-- **RFM Segmentation**: Quintile-based scoring with 6 customer segments (Champion, Loyal, At Risk, Lost, Potential, New).
-- **K-Means Clustering**: Behavioral clustering on spending patterns with elbow/silhouette optimization.
-- **SHAP Explainability**: Feature importance analysis — top drivers: deposit type, special requests, lead time.
+- **Cancellation Prediction**: 5 models (Logistic Regression, Random Forest, XGBoost, LightGBM, CatBoost) with 62 engineered features. Best: XGBoost with AUC-ROC 0.9465.
+- **CLTV Modeling**: BG-NBD + Gamma-Gamma probabilistic models for 7,993 customers. Mean 6-month CLTV: USD 1,742.51 (max: USD 19,169.68).
+- **RFM Segmentation**: Quintile-based scoring — high-value customers (score 5,5) average USD 32,759 vs USD 804 for low-engagement.
+- **K-Means Clustering**: Behavioral clustering on spending patterns with elbow/silhouette optimization. 4 CLTV segments (~2,000 customers each).
+- **SHAP Explainability**: Top drivers: country_cancel_rate (1.01), deposit_cancel_rate (0.79), lead_time (0.57).
+- **Business Impact**: EUR 2,787,144 per test set at optimal threshold (0.3), EUR 13.9M+ estimated annual impact.
 
 ### Module 2: LLM & Unstructured Data
 
 **Invoice classification, master item cleanup, and sentiment analysis.**
 
-- **Invoice Classification**: Hybrid pipeline — rule-based (92.65%) with LLM fallback (96.8%). Includes TF-IDF + ML baselines.
-- **Master Item Cleanup**: 4-layer matching: Exact → Fuzzy (RapidFuzz, threshold=82) → TF-IDF char n-gram embedding → Fuzzy relaxed (threshold=60).
-- **Review Sentiment Analysis**: Multi-layer approach — rule-based + GradientBoosting ML + aspect-level models (cleanliness, staff, food, location, value).
+- **Invoice Classification**: 5-method comparison — Rule-based (92.65%, 79K rows/sec), TF-IDF+LogReg (100%), TF-IDF+RF (100%), LLM Zero-Shot (~89%), LLM Few-Shot (~94%).
+- **Master Item Cleanup**: 4-layer hybrid pipeline: Exact (100% acc) -> Fuzzy t=82 (93.9%) -> TF-IDF embedding (93.5%) -> Fuzzy t=60 (63.8%). Overall: 89% accuracy, 96.08% match rate.
+- **Review Sentiment Analysis**: Rule-based (73.8%) + GradientBoosting ML (100%). Aspect-level analysis across 5 dimensions: value (42.3%), food (34.0%), staff (33.3%), location (32.2%), cleanliness (28.6%).
 
 ### Module 3: Conversational AI
 
@@ -58,14 +62,14 @@ A comprehensive AI/ML platform designed for hotel chains, covering the full data
 - **NL-to-SQL**: Schema-aware SQL generation with safety validation (blocks DROP/DELETE/INSERT).
 - **Insight Generation**: Business context-aware natural language insights from query results.
 - **Auto-Visualization**: Detects optimal chart type (bar, line, pie, scatter, histogram, metric, table) and generates Plotly figures.
-- **LLM Routing**: 3-layer pipeline — diskcache → Groq API (LLaMA 3.3 70B) → Fallback responses.
+- **LLM Routing**: 3-layer pipeline — diskcache -> Groq API (LLaMA 3.3 70B) -> Fallback responses.
 
 ### Module 4: MLOps & Monitoring
 
 **Experiment tracking, model registry, drift detection, and alerting.**
 
 - **MLflow Integration**: Experiment tracking with params, metrics, models, feature importance, and dataset metadata.
-- **Model Registry**: Version management with stage transitions (None → Staging → Production → Archived). Local joblib fallback.
+- **Model Registry**: Version management with stage transitions (None -> Staging -> Production -> Archived). Local joblib fallback.
 - **Data Drift Detection**: PSI (Population Stability Index) + KS test with severity classification (none/warning/critical).
 - **Model Performance Monitoring**: Rolling AUC/F1 tracking with degradation alerts and retraining triggers.
 - **Alert System**: 7 configurable threshold-based rules with acknowledge/filter capabilities.
@@ -87,6 +91,19 @@ Premium dark-themed dashboard with **Strawberry-inspired** color palette and **m
 | **Review Analyzer** | Sentiment distribution, aspect radar chart, hotel filters |
 | **Analytics Chatbot** | Split layout (chat + visualization), Groq LLM integration |
 | **MLOps Monitor** | Health score, PSI drift charts, performance tracking, alert dashboard |
+
+---
+
+## Kaggle Notebooks
+
+Interactive, runnable versions of each module — with full outputs and visualizations:
+
+| # | Notebook | Highlights |
+|---|----------|------------|
+| 01 | [Cancellation Prediction](https://www.kaggle.com/code/mehmetisik/01-cancellation-prediction) | EDA, 62 features, 5 models, SHAP, EUR 13.9M+ business impact |
+| 02 | [Customer Analytics](https://www.kaggle.com/code/mehmetisik/02-customer-analytics) | RFM segmentation, BG-NBD + Gamma-Gamma CLTV, K-Means clustering |
+| 03 | [NLP & LLM Pipeline](https://www.kaggle.com/code/mehmetisik/03-nlp-and-llm) | Invoice classification (5 methods), item cleanup, sentiment analysis |
+| 04 | [Platform Overview](https://www.kaggle.com/code/mehmetisik/04-platform-overview) | Full architecture, module results summary, tech stack |
 
 ---
 
@@ -160,9 +177,9 @@ hotel-intelligence-platform/
 │   ├── components.py              #   Reusable UI components
 │   └── pages/                     #   7 module pages
 ├── data/
-│   ├── raw/                       #   Kaggle hotel bookings
-│   └── synthetic/                 #   Generated datasets + scripts
-├── notebooks/                     # Kaggle-ready notebooks
+│   ├── raw/                       #   Hotel bookings (119K records)
+│   └── synthetic/                 #   Generated datasets (6 CSVs)
+├── notebooks/                     # 4 Kaggle-ready notebooks
 ├── models/                        # Trained models + metadata
 ├── tests/                         # 188+ tests
 ├── .github/workflows/ci.yml       # CI/CD pipeline
@@ -178,7 +195,7 @@ hotel-intelligence-platform/
 | Category | Technologies |
 |----------|-------------|
 | **ML/DL** | Scikit-learn, XGBoost, LightGBM, CatBoost, SHAP |
-| **Statistical** | BG-NBD, Gamma-Gamma (btyd), SciPy |
+| **Statistical** | BG-NBD, Gamma-Gamma (btyd/lifetimes), SciPy |
 | **LLM** | Groq API (LLaMA 3.3 70B), diskcache |
 | **NLP** | RapidFuzz, TF-IDF, NLTK |
 | **Visualization** | Plotly, Matplotlib, Seaborn |
@@ -214,17 +231,6 @@ python -m pytest tests/ --cov=src --cov-report=term-missing
 
 ---
 
-## Kaggle Notebooks
-
-| Notebook | Description |
-|----------|-------------|
-| [01 - Cancellation Prediction](notebooks/01_cancellation_prediction.ipynb) | Full EDA → Feature Engineering → 5 Model Comparison → SHAP → Business Impact |
-| [02 - Customer Analytics](notebooks/02_customer_analytics.ipynb) | RFM Segmentation → CLTV Modeling → K-Means Clustering |
-| [03 - NLP & LLM](notebooks/03_nlp_and_llm.ipynb) | Invoice Classification → Item Cleanup → Sentiment Analysis |
-| [04 - Platform Overview](notebooks/04_platform_overview.ipynb) | Complete system architecture walkthrough |
-
----
-
 ## Architecture
 
 ```
@@ -256,6 +262,10 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ## Author
 
-**Mehmet Isik** — Data Scientist
+**Mehmet ISIK** — Kaggle Grandmaster | WWTP Operations Engineer
 
+- Website: [mehmetisik.dev](https://mehmetisik.dev)
+- LinkedIn: [in/mehmetisik4601](https://www.linkedin.com/in/mehmetisik4601)
+- Kaggle: [@mehmetisik](https://www.kaggle.com/mehmetisik)
+- Medium: [@mmehmetisiken](https://medium.com/@mmehmetisiken)
 - GitHub: [@mmehmetisik](https://github.com/mmehmetisik)
