@@ -29,7 +29,7 @@ apply_theme()
 lang = get_current_lang()
 
 st.markdown(f"# {t('chat_title', lang)}")
-st.caption("Ask questions about your hotel data in natural language")
+st.caption(t("chat_desc", lang))
 
 # ─── Initialize Chatbot ───
 if "chat_messages" not in st.session_state:
@@ -82,7 +82,7 @@ with chat_col:
          border-radius: 12px; padding: 8px 16px; margin-bottom: 16px;">
         <span style="color: {COLORS['success']};">●</span>
         <span style="color: {COLORS['text_secondary']}; font-size: 0.85rem;">
-            {'Chatbot Ready — Groq LLM Connected' if chatbot_ready else 'Chatbot Offline'}
+            {t('chatbot_ready', lang) if chatbot_ready else t('chatbot_offline', lang)}
         </span>
     </div>
     """, unsafe_allow_html=True)
@@ -108,7 +108,7 @@ with chat_col:
             st.session_state.chat_messages.append({"role": "user", "content": user_input})
 
         if chatbot_ready:
-            with st.spinner("Analyzing..."):
+            with st.spinner(t("analyzing", lang)):
                 try:
                     response = st.session_state.chatbot.ask(user_input)
 
@@ -128,21 +128,13 @@ with chat_col:
                     st.session_state.chat_messages.append({"role": "assistant", "content": error_msg})
         else:
             # Fallback demo response
-            demo_response = (
-                "I'm currently running in demo mode (Groq API not connected). "
-                "In production, I would:\n"
-                "1. Detect your intent (SQL query, prediction, recommendation)\n"
-                "2. Generate a SQL query from your question\n"
-                "3. Execute it against the hotel database\n"
-                "4. Generate business insights from the results\n"
-                "5. Create an auto-visualization"
-            )
+            demo_response = t("demo_mode_msg", lang)
             st.session_state.chat_messages.append({"role": "assistant", "content": demo_response})
 
         st.rerun()
 
 with viz_col:
-    st.markdown(f"#### Visualization")
+    st.markdown(f"#### {t('visualization', lang)}")
 
     if st.session_state.last_chart is not None:
         try:
@@ -150,7 +142,7 @@ with viz_col:
             apply_plotly_theme(fig)
             st.plotly_chart(fig, use_container_width=True)
         except Exception:
-            st.info("Chart will appear here when you ask a data question.")
+            st.info(t("chart_placeholder_msg", lang))
 
     elif st.session_state.last_data is not None:
         st.dataframe(st.session_state.last_data, use_container_width=True)
@@ -160,32 +152,32 @@ with viz_col:
              display: flex; align-items: center; justify-content: center; flex-direction: column;">
             <div style="font-size: 3rem; margin-bottom: 16px;">📊</div>
             <div style="color: {COLORS['text_secondary']};">
-                Charts and data tables will appear here<br>when you ask a question
+                {t('viz_placeholder_msg', lang)}
             </div>
         </div>
         """, unsafe_allow_html=True)
 
     # Data table below chart
     if st.session_state.last_data is not None:
-        with st.expander("View Raw Data"):
+        with st.expander(t("view_raw_data", lang)):
             st.dataframe(st.session_state.last_data, use_container_width=True)
 
 # ─── Architecture Info ───
-with st.expander("How it works"):
+with st.expander(t("how_it_works", lang)):
     st.markdown(f"""
     <div style="color: {COLORS['text_secondary']};">
-        <b>Pipeline Architecture:</b><br><br>
-        1. <b>Intent Detection</b> — LLM classifies question into: sql_query, prediction, recommendation, summary, explanation<br>
-        2. <b>SQL Generation</b> — Schema-aware NL-to-SQL with safety validation (no DROP/DELETE)<br>
-        3. <b>Execution</b> — Query runs against SQLite analytics database (119K+ records)<br>
-        4. <b>Insight Generation</b> — LLM generates natural language business insights from results<br>
-        5. <b>Auto-Visualization</b> — Detects optimal chart type (bar, line, pie, scatter, metric)<br><br>
-        <b>LLM Routing:</b> Cache (diskcache) → Groq API (LLaMA 3.3 70B) → Fallback
+        <b>{t('pipeline_architecture', lang)}</b><br><br>
+        1. <b>{t('intent_detection', lang)}</b> — {t('intent_detail', lang)}<br>
+        2. <b>{t('sql_generation', lang)}</b> — {t('sql_gen_detail', lang)}<br>
+        3. <b>{t('execution', lang)}</b> — {t('execution_detail', lang)}<br>
+        4. <b>{t('insight_generation', lang)}</b> — {t('insight_detail', lang)}<br>
+        5. <b>{t('auto_viz', lang)}</b> — {t('auto_viz_detail', lang)}<br><br>
+        <b>{t('llm_routing', lang)}</b> {t('llm_routing_detail', lang)}
     </div>
     """, unsafe_allow_html=True)
 
 # Clear chat button
-if st.button("🗑️ Clear Chat", use_container_width=True):
+if st.button(f"🗑️ {t('clear_chat', lang)}", use_container_width=True):
     st.session_state.chat_messages = []
     st.session_state.last_chart = None
     st.session_state.last_data = None

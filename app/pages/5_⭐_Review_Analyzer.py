@@ -31,7 +31,7 @@ apply_theme()
 lang = get_current_lang()
 
 st.markdown(f"# {t('review_title', lang)}")
-st.caption("Multi-layer sentiment analysis with aspect-level breakdown")
+st.caption(t("review_desc", lang))
 
 # ─────────────── Load Data ───────────────
 SYNTHETIC_DIR = ROOT_DIR / "data" / "synthetic"
@@ -43,23 +43,23 @@ if reviews_path.exists():
     # ─── KPI Row ───
     k1, k2, k3, k4 = st.columns(4)
     with k1:
-        st.metric("Total Reviews", f"{len(df):,}")
+        st.metric(t("total_reviews", lang), f"{len(df):,}")
     with k2:
-        st.metric("Avg Rating", f"{df['rating'].mean():.2f} / 5")
+        st.metric(t("avg_rating", lang), f"{df['rating'].mean():.2f} / 5")
     with k3:
         positive = (df["sentiment_true"] == "positive").mean()
-        st.metric("Positive Rate", f"{positive:.0%}")
+        st.metric(t("positive_rate", lang), f"{positive:.0%}")
     with k4:
-        st.metric("Hotels Covered", f"{df['hotel'].nunique()}")
+        st.metric(t("hotels_covered", lang), f"{df['hotel'].nunique()}")
 
     # ─── Sidebar Filters ───
-    st.sidebar.markdown("### Filters")
+    st.sidebar.markdown(f"### {t('filters', lang)}")
     selected_hotel = st.sidebar.multiselect(
-        "Hotel", df["hotel"].unique().tolist(),
+        t("hotel_filter", lang), df["hotel"].unique().tolist(),
         default=df["hotel"].unique().tolist(),
     )
     selected_sentiment = st.sidebar.multiselect(
-        "Sentiment", df["sentiment_true"].unique().tolist(),
+        t("sentiment_filter", lang), df["sentiment_true"].unique().tolist(),
         default=df["sentiment_true"].unique().tolist(),
     )
 
@@ -72,7 +72,7 @@ if reviews_path.exists():
     tab1, tab2, tab3 = st.tabs([
         f"📊 {t('sentiment_dist', lang)}",
         f"🎯 {t('aspect_analysis', lang)}",
-        "📝 Reviews",
+        f"📝 {t('reviews_tab', lang)}",
     ])
 
     # ─── Tab 1: Sentiment Distribution ───
@@ -84,7 +84,7 @@ if reviews_path.exists():
             color_map = {"positive": COLORS["success"], "negative": COLORS["danger"], "neutral": COLORS["warning"]}
             fig = px.pie(
                 sent_dist, values="Count", names="Sentiment",
-                title="Sentiment Distribution",
+                title=t("sentiment_dist", lang),
                 hole=0.45,
                 color="Sentiment",
                 color_discrete_map=color_map,
@@ -98,7 +98,7 @@ if reviews_path.exists():
             rating_dist.columns = ["Rating", "Count"]
             fig = px.bar(
                 rating_dist, x="Rating", y="Count",
-                title="Rating Distribution",
+                title=t("rating_distribution", lang),
                 color="Rating",
                 color_continuous_scale=["#1E2130", COLORS["primary"]],
             )
@@ -111,7 +111,7 @@ if reviews_path.exists():
             hotel_sent = filtered.groupby(["hotel", "sentiment_true"]).size().reset_index(name="count")
             fig = px.bar(
                 hotel_sent, x="hotel", y="count", color="sentiment_true",
-                title="Sentiment by Hotel",
+                title=t("sentiment_by_hotel", lang),
                 barmode="group",
                 color_discrete_map=color_map,
             )
@@ -136,7 +136,7 @@ if reviews_path.exists():
                     aspect_means.sort_values("Score", ascending=True),
                     x="Score", y="Aspect",
                     orientation="h",
-                    title="Average Aspect Scores (1-5)",
+                    title=t("avg_aspect_scores", lang),
                     color="Score",
                     color_continuous_scale=[COLORS["danger"], COLORS["warning"], COLORS["success"]],
                     range_color=[1, 5],
@@ -161,7 +161,7 @@ if reviews_path.exists():
                     name="Overall",
                 ))
                 fig.update_layout(
-                    title="Aspect Radar Chart",
+                    title=t("aspect_radar", lang),
                     polar=dict(radialaxis=dict(range=[0, 5])),
                     height=400,
                 )
@@ -169,7 +169,7 @@ if reviews_path.exists():
                 st.plotly_chart(fig, use_container_width=True)
 
             # Aspect by sentiment
-            section_header("Aspect Scores by Sentiment")
+            section_header(t("aspect_by_sentiment", lang))
             for sent in ["positive", "negative", "neutral"]:
                 sent_data = filtered[filtered["sentiment_true"] == sent]
                 if len(sent_data) > 0:
@@ -178,14 +178,14 @@ if reviews_path.exists():
                     st.markdown(f"**{sent.title()}** ({len(sent_data)} reviews)")
                     st.dataframe(means.to_frame("Avg Score").T, use_container_width=True)
         else:
-            info_box("Aspect columns not found in data.", "warning")
+            info_box(t("aspect_not_found", lang), "warning")
 
     # ─── Tab 3: Reviews ───
     with tab3:
-        section_header("Browse Reviews")
+        section_header(t("browse_reviews", lang))
 
-        sort_by = st.selectbox("Sort by", ["rating", "sentiment_true", "hotel"])
-        ascending = st.checkbox("Ascending", value=False)
+        sort_by = st.selectbox(t("sort_by", lang), ["rating", "sentiment_true", "hotel"])
+        ascending = st.checkbox(t("ascending", lang), value=False)
 
         display_cols = ["hotel", "rating", "sentiment_true", "review_text"]
         available_display = [c for c in display_cols if c in filtered.columns]

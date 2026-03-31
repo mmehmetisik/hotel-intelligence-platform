@@ -31,7 +31,7 @@ apply_theme()
 lang = get_current_lang()
 
 st.markdown(f"# {t('cust_title', lang)}")
-st.caption("RFM segmentation, CLTV prediction, and behavioral clustering")
+st.caption(t("cust_desc", lang))
 
 # ─────────────── Load Data ───────────────
 SYNTHETIC_DIR = ROOT_DIR / "data" / "synthetic"
@@ -48,9 +48,9 @@ if transactions_path.exists():
     with k2:
         st.metric(t("avg_revenue", lang), f"€{df['total_revenue'].mean():,.0f}")
     with k3:
-        st.metric("Avg. Frequency", f"{df.groupby('customer_id').size().mean():.1f}")
+        st.metric(t("avg_frequency", lang), f"{df.groupby('customer_id').size().mean():.1f}")
     with k4:
-        st.metric("Total Revenue", f"€{df['total_revenue'].sum():,.0f}")
+        st.metric(t("total_revenue", lang), f"€{df['total_revenue'].sum():,.0f}")
 
     # ─── Tabs ───
     tab1, tab2, tab3 = st.tabs([
@@ -102,7 +102,7 @@ if transactions_path.exists():
         with c1:
             fig = px.pie(
                 seg_counts, values="Count", names="Segment",
-                title="Customer Segments",
+                title=t("customer_segments", lang),
                 hole=0.4,
                 color_discrete_sequence=[
                     COLORS["primary"], COLORS["accent"], COLORS["info"],
@@ -127,7 +127,7 @@ if transactions_path.exists():
         fig = px.scatter(
             rfm, x="recency", y="monetary", size="frequency",
             color="segment", hover_data=["customer_id", "RFM_score"],
-            title="RFM Scatter: Recency vs Monetary (size = Frequency)",
+            title=t("rfm_scatter_title", lang),
             height=500,
         )
         apply_plotly_theme(fig)
@@ -135,7 +135,7 @@ if transactions_path.exists():
 
     # ─── Tab 2: CLTV ───
     with tab2:
-        section_header("Customer Lifetime Value Prediction", "BG-NBD + Gamma-Gamma Model")
+        section_header(t("cltv_section_title", lang), t("cltv_section_subtitle", lang))
 
         # Calculate simple CLTV proxy
         cust_stats = df.groupby("customer_id").agg(
@@ -159,7 +159,7 @@ if transactions_path.exists():
         with c1:
             fig = px.histogram(
                 cust_stats, x="cltv_proxy", nbins=50,
-                title="CLTV Distribution",
+                title=t("cltv_distribution", lang),
                 color_discrete_sequence=[COLORS["primary"]],
             )
             fig.update_layout(height=400)
@@ -176,7 +176,7 @@ if transactions_path.exists():
             fig = px.bar(
                 seg_cltv.reset_index(),
                 x="cltv_segment", y="avg_cltv",
-                title="Average CLTV by Segment",
+                title=t("avg_cltv_by_segment", lang),
                 color="cltv_segment",
                 color_discrete_sequence=[COLORS["info"], COLORS["accent"], COLORS["warning"], COLORS["primary"]],
             )
@@ -185,7 +185,7 @@ if transactions_path.exists():
             st.plotly_chart(fig, use_container_width=True)
 
         # Top customers
-        section_header("Top 10 Highest Value Customers")
+        section_header(t("top10_customers", lang))
         top10 = cust_stats.nlargest(10, "cltv_proxy")[
             ["customer_id", "total_revenue", "frequency", "avg_order", "cltv_proxy", "cltv_segment"]
         ].round(2)
@@ -194,7 +194,7 @@ if transactions_path.exists():
 
     # ─── Tab 3: Clustering ───
     with tab3:
-        section_header("Behavioral Customer Clustering", "K-Means on spending patterns")
+        section_header(t("clustering", lang), t("clustering_subtitle", lang))
 
         # Build clustering features
         clust_df = df.groupby("customer_id").agg(
@@ -213,7 +213,7 @@ if transactions_path.exists():
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 
-        n_clusters = st.slider("Number of Clusters", 2, 8, 4)
+        n_clusters = st.slider(t("num_clusters", lang), 2, 8, 4)
         kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
         clust_df["cluster"] = kmeans.fit_predict(X_scaled)
         clust_df["cluster"] = clust_df["cluster"].astype(str)
@@ -223,7 +223,7 @@ if transactions_path.exists():
             fig = px.scatter(
                 clust_df, x="total_spend", y="num_transactions",
                 color="cluster", size="avg_spend",
-                title="Customer Clusters: Spend vs Frequency",
+                title=t("cluster_scatter_title", lang),
                 height=450,
             )
             apply_plotly_theme(fig)
@@ -249,7 +249,7 @@ if transactions_path.exists():
                 fill="toself",
                 name=f"Cluster {cluster_id}",
             ))
-        fig.update_layout(title="Cluster Profiles (Normalized)", height=450)
+        fig.update_layout(title=t("cluster_profiles", lang), height=450)
         apply_plotly_theme(fig)
         st.plotly_chart(fig, use_container_width=True)
 

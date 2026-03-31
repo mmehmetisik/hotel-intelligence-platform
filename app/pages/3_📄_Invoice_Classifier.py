@@ -29,7 +29,7 @@ apply_theme()
 lang = get_current_lang()
 
 st.markdown(f"# {t('invoice_title', lang)}")
-st.caption("Rule-based vs LLM-powered invoice line classification")
+st.caption(t("invoice_desc", lang))
 
 # ─────────────── Load Data ───────────────
 SYNTHETIC_DIR = ROOT_DIR / "data" / "synthetic"
@@ -41,19 +41,19 @@ if invoices_path.exists():
     # ─── KPI Row ───
     k1, k2, k3, k4 = st.columns(4)
     with k1:
-        st.metric("Total Invoice Lines", f"{len(df):,}")
+        st.metric(t("total_invoice_lines", lang), f"{len(df):,}")
     with k2:
-        st.metric("Categories", f"{df['category_true'].nunique()}")
+        st.metric(t("categories", lang), f"{df['category_true'].nunique()}")
     with k3:
-        st.metric("Rule-Based Accuracy", "92.65%")
+        st.metric(t("rule_based_accuracy", lang), "92.65%")
     with k4:
-        st.metric("LLM Accuracy", "96.8%")
+        st.metric(t("llm_accuracy", lang), "96.8%")
 
     # ─── Tabs ───
     tab1, tab2, tab3 = st.tabs([
         f"📊 {t('model_comparison', lang)}",
-        f"🔍 Category Analysis",
-        f"🎯 Live Demo",
+        f"🔍 {t('category_analysis', lang)}",
+        f"🎯 {t('live_demo', lang)}",
     ])
 
     # ─── Tab 1: Comparison ───
@@ -72,7 +72,7 @@ if invoices_path.exists():
         with c1:
             fig = px.bar(
                 comparison, x="Method", y="Accuracy",
-                title="Classification Accuracy by Method",
+                title=t("accuracy_by_method", lang),
                 color="Accuracy",
                 color_continuous_scale=["#1E2130", COLORS["primary"]],
             )
@@ -83,7 +83,7 @@ if invoices_path.exists():
         with c2:
             fig = px.bar(
                 comparison, x="Method", y="Latency (ms)",
-                title="Latency per Classification (ms)",
+                title=t("latency_by_method", lang),
                 color="Latency (ms)",
                 color_continuous_scale=["#1E2130", COLORS["accent"]],
             )
@@ -91,12 +91,7 @@ if invoices_path.exists():
             apply_plotly_theme(fig)
             st.plotly_chart(fig, use_container_width=True)
 
-        info_box(
-            "<b>Key Insight:</b> Rule-based achieves 92.65% accuracy at near-zero latency. "
-            "LLM few-shot reaches 96.8% but at 600x the latency. The hybrid approach "
-            "(rule-based first, LLM fallback) gives the best of both worlds.",
-            "info",
-        )
+        info_box(t("invoice_key_insight", lang), "info")
 
     # ─── Tab 2: Category Analysis ───
     with tab2:
@@ -107,7 +102,7 @@ if invoices_path.exists():
         with c1:
             fig = px.pie(
                 cat_dist, values="Count", names="Category",
-                title="Invoice Category Distribution",
+                title=t("invoice_cat_distribution", lang),
                 hole=0.4,
             )
             fig.update_layout(height=400)
@@ -119,7 +114,7 @@ if invoices_path.exists():
                 cat_dist.sort_values("Count", ascending=True),
                 x="Count", y="Category",
                 orientation="h",
-                title="Items per Category",
+                title=t("items_per_category", lang),
                 color="Count",
                 color_continuous_scale=["#1E2130", COLORS["primary"]],
             )
@@ -128,36 +123,36 @@ if invoices_path.exists():
             st.plotly_chart(fig, use_container_width=True)
 
         # Sample items per category
-        section_header("Sample Items by Category")
-        selected_cat = st.selectbox("Select Category", sorted(df["category_true"].unique()))
+        section_header(t("sample_items_by_cat", lang))
+        selected_cat = st.selectbox(t("select_category", lang), sorted(df["category_true"].unique()))
         sample = df[df["category_true"] == selected_cat][["description", "category_true"]].head(10)
         st.dataframe(sample, use_container_width=True, hide_index=True)
 
     # ─── Tab 3: Live Demo ───
     with tab3:
-        section_header("Classify an Invoice Line", "Enter a description to classify")
+        section_header(t("classify_invoice_line", lang), t("classify_subtitle", lang))
 
         user_input = st.text_input(
-            "Invoice Description",
-            placeholder="e.g., Sparkling water 500ml, Fresh salmon fillet, Bathroom towels",
+            t("invoice_description", lang),
+            placeholder=t("invoice_placeholder", lang),
         )
 
-        if user_input and st.button("🔍 Classify", use_container_width=True):
+        if user_input and st.button(f"🔍 {t('classify_btn', lang)}", use_container_width=True):
             try:
                 from src.module_2_llm.invoice_classification.rule_based import classify_rule_based
                 result = classify_rule_based(user_input)
 
                 st.markdown(f"""
                 <div class="premium-card" style="text-align: center;">
-                    <div class="kpi-label">Classification Result</div>
+                    <div class="kpi-label">{t('classification_result', lang)}</div>
                     <div class="kpi-value">{result}</div>
                     <div style="color: {COLORS['text_secondary']}; margin-top: 8px;">
-                        Method: Rule-Based | Confidence: High
+                        {t('method_confidence', lang)}
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
             except Exception as e:
-                info_box(f"Classification error: {e}", "error")
+                info_box(f"{t('classification_error', lang)}: {e}", "error")
 
 else:
     info_box(t("no_data", lang), "warning")

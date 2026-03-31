@@ -29,8 +29,8 @@ st.set_page_config(page_title="Item Cleanup", page_icon="🔍", layout="wide")
 apply_theme()
 lang = get_current_lang()
 
-st.markdown("# Master Item Cleanup")
-st.caption("4-layer hybrid matching pipeline: Exact → Fuzzy → TF-IDF Embedding → Fuzzy Relaxed")
+st.markdown(f"# {t('item_cleanup_title', lang)}")
+st.caption(t("item_cleanup_desc", lang))
 
 # ─────────────── Load Data ───────────────
 SYNTHETIC_DIR = ROOT_DIR / "data" / "synthetic"
@@ -42,19 +42,19 @@ if master_path.exists():
     # ─── KPI Row ───
     k1, k2, k3, k4 = st.columns(4)
     with k1:
-        st.metric("Dirty Items", f"{len(df):,}")
+        st.metric(t("dirty_items", lang), f"{len(df):,}")
     with k2:
-        st.metric("Standard Items", f"{df['standard_name'].nunique()}")
+        st.metric(t("standard_items", lang), f"{df['standard_name'].nunique()}")
     with k3:
-        st.metric("Categories", f"{df['category'].nunique()}")
+        st.metric(t("categories", lang), f"{df['category'].nunique()}")
     with k4:
-        st.metric("Pipeline Layers", "4")
+        st.metric(t("pipeline_layers", lang), "4")
 
     # ─── Tabs ───
     tab1, tab2, tab3 = st.tabs([
-        "🔄 Pipeline Overview",
-        "📊 Match Analysis",
-        "🎯 Live Matching",
+        f"🔄 {t('pipeline_overview', lang)}",
+        f"📊 {t('match_analysis', lang)}",
+        f"🎯 {t('live_matching', lang)}",
     ])
 
     # ─── Tab 1: Pipeline Overview ───
@@ -62,12 +62,12 @@ if master_path.exists():
         # Pipeline architecture
         st.markdown(f"""
         <div class="premium-card">
-            <h4 style="color: {COLORS['primary']};">4-Layer Hybrid Matching Pipeline</h4>
+            <h4 style="color: {COLORS['primary']};">{t('pipeline_title', lang)}</h4>
             <div style="font-family: monospace; font-size: 0.85rem; line-height: 2;">
-                <span style="color: {COLORS['success']};">Layer 1</span> → <b>Exact Match</b> — Direct string comparison after normalization<br>
-                <span style="color: {COLORS['info']};">Layer 2</span> → <b>Fuzzy Match (threshold=82)</b> — RapidFuzz WRatio for close matches<br>
-                <span style="color: {COLORS['accent']};">Layer 3</span> → <b>TF-IDF Embedding</b> — Character n-gram cosine similarity<br>
-                <span style="color: {COLORS['primary']};">Layer 4</span> → <b>Fuzzy Relaxed (threshold=60)</b> — Catch remaining abbreviations
+                <span style="color: {COLORS['success']};">Layer 1</span> → <b>{t('layer1_desc', lang)}</b> — {t('layer1_detail', lang)}<br>
+                <span style="color: {COLORS['info']};">Layer 2</span> → <b>{t('layer2_desc', lang)}</b> — {t('layer2_detail', lang)}<br>
+                <span style="color: {COLORS['accent']};">Layer 3</span> → <b>{t('layer3_desc', lang)}</b> — {t('layer3_detail', lang)}<br>
+                <span style="color: {COLORS['primary']};">Layer 4</span> → <b>{t('layer4_desc', lang)}</b> — {t('layer4_detail', lang)}
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -84,7 +84,7 @@ if master_path.exists():
             fig = px.funnel(
                 layer_data[layer_data["Items Matched"] > 0],
                 x="Items Matched", y="Layer",
-                title="Pipeline Funnel: Items Matched per Layer",
+                title=t("pipeline_funnel_title", lang),
             )
             fig.update_layout(height=400)
             apply_plotly_theme(fig)
@@ -94,7 +94,7 @@ if master_path.exists():
             fig = px.bar(
                 layer_data[layer_data["Accuracy"] > 0],
                 x="Layer", y="Accuracy",
-                title="Match Accuracy by Layer",
+                title=t("match_accuracy_by_layer", lang),
                 color="Accuracy",
                 color_continuous_scale=["#1E2130", COLORS["success"]],
                 text="Accuracy",
@@ -106,7 +106,7 @@ if master_path.exists():
 
     # ─── Tab 2: Match Analysis ───
     with tab2:
-        section_header("Category Distribution")
+        section_header(t("category_distribution", lang))
 
         cat_dist = df["category"].value_counts().reset_index()
         cat_dist.columns = ["Category", "Count"]
@@ -115,7 +115,7 @@ if master_path.exists():
         with c1:
             fig = px.pie(
                 cat_dist, values="Count", names="Category",
-                title="Items by Category", hole=0.4,
+                title=t("items_by_category", lang), hole=0.4,
             )
             fig.update_layout(height=400)
             apply_plotly_theme(fig)
@@ -123,23 +123,23 @@ if master_path.exists():
 
         with c2:
             # Dirty vs Standard name examples
-            section_header("Dirty → Standard Mapping Examples")
+            section_header(t("dirty_standard_examples", lang))
             sample = df.sample(min(10, len(df)), random_state=42)[["dirty_name", "standard_name", "category"]]
             sample.columns = ["Dirty Name", "Standard Name", "Category"]
             st.dataframe(sample, use_container_width=True, hide_index=True)
 
     # ─── Tab 3: Live Matching ───
     with tab3:
-        section_header("Test the Matching Pipeline", "Enter a dirty product name")
+        section_header(t("test_matching_pipeline", lang), t("enter_dirty_name", lang))
 
         user_input = st.text_input(
-            "Dirty Item Name",
-            placeholder="e.g., spag bol, chkn brst, org juce",
+            t("dirty_item_name", lang),
+            placeholder=t("dirty_item_placeholder", lang),
         )
 
-        threshold = st.slider("Fuzzy Match Threshold", 30, 100, 70)
+        threshold = st.slider(t("fuzzy_threshold", lang), 30, 100, 70)
 
-        if user_input and st.button("🔍 Find Match", use_container_width=True):
+        if user_input and st.button(f"🔍 {t('find_match_btn', lang)}", use_container_width=True):
             try:
                 from rapidfuzz import fuzz
                 standard_items = df["standard_name"].unique().tolist()
@@ -157,10 +157,10 @@ if master_path.exists():
                     color = COLORS["success"] if best_score >= 80 else COLORS["warning"]
                     st.markdown(f"""
                     <div class="premium-card" style="text-align: center;">
-                        <div class="kpi-label">Best Match</div>
+                        <div class="kpi-label">{t('best_match', lang)}</div>
                         <div class="kpi-value" style="color: {color};">{best_match}</div>
                         <div style="color: {COLORS['text_secondary']}; margin-top: 8px;">
-                            Confidence: {best_score:.0f}% | Input: "{user_input}"
+                            {t('confidence_label', lang)}: {best_score:.0f}% | {t('input_label', lang)}: "{user_input}"
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
@@ -173,10 +173,10 @@ if master_path.exists():
                     top5 = pd.DataFrame(matches).nlargest(5, "Score")
                     st.dataframe(top5, use_container_width=True, hide_index=True)
                 else:
-                    info_box(f"No match found above threshold ({threshold}%). Best: {best_match} ({best_score:.0f}%)", "warning")
+                    info_box(t("no_match_found", lang).format(threshold=threshold, best=best_match, score=f"{best_score:.0f}"), "warning")
 
             except ImportError:
-                info_box("rapidfuzz not installed. Run: pip install rapidfuzz", "error")
+                info_box(t("rapidfuzz_missing", lang), "error")
 
 else:
     info_box(t("no_data", lang), "warning")
