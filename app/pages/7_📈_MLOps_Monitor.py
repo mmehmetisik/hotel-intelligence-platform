@@ -31,14 +31,13 @@ apply_theme()
 lang = get_current_lang()
 
 st.markdown(f"# {t('mlops_title', lang)}")
-st.caption("Real-time model monitoring, data drift detection, and alerting")
+st.caption(t("mlops_desc", lang))
 
 # ─── Initialize Dashboard ───
 try:
     from src.module_4_mlops.monitoring.monitoring_dashboard import MonitoringDashboard
     dashboard = MonitoringDashboard()
 
-    # Generate demo reference data
     np.random.seed(42)
     ref_data = pd.DataFrame({
         "lead_time": np.random.normal(100, 45, 1000),
@@ -61,44 +60,19 @@ except Exception as e:
     dashboard_error = str(e)
 
 if dashboard_ready:
-    # ─── Health Score ───
-    health = dashboard.get_health_score()
-    score = health["overall_score"]
-    status = health["status"]
-    components = health["components"]
-
-    # Health KPI row
-    h1, h2, h3, h4 = st.columns(4)
-    with h1:
-        score_color = COLORS["success"] if score >= 80 else COLORS["warning"] if score >= 60 else COLORS["danger"]
-        st.markdown(f"""
-        <div class="premium-card" style="text-align: center;">
-            <div class="kpi-label">{t('health_score', lang)}</div>
-            <div class="kpi-value" style="color: {score_color}; font-size: 2.5rem;">{score:.0f}</div>
-            <div>{status_badge(status)}</div>
-        </div>
-        """, unsafe_allow_html=True)
-    with h2:
-        st.metric("Data Quality", f"{components['data_quality']:.0f}/40")
-    with h3:
-        st.metric("Model Performance", f"{components['model_performance']:.0f}/40")
-    with h4:
-        st.metric("System Health", f"{components['system_health']:.0f}/20")
-
-    # ─── Tabs ───
+    # ─── Tabs (before health score so drift_level is available) ───
     tab1, tab2, tab3, tab4 = st.tabs([
         f"📊 {t('data_drift', lang)}",
         f"📈 {t('model_performance', lang)}",
         f"🔔 {t('alerts', lang)}",
-        "⚙️ Experiment Tracking",
+        f"⚙️ {t('experiment_tracking', lang)}",
     ])
 
     # ─── Tab 1: Data Drift ───
     with tab1:
-        section_header("Data Drift Analysis", "PSI and KS test results for feature distributions")
+        section_header(t("data_drift_analysis", lang), t("drift_subtitle", lang))
 
-        # Simulate current data with slight drift
-        drift_level = st.slider("Simulate Drift Level", 0.0, 2.0, 0.3, 0.1,
+        drift_level = st.slider(t("simulate_drift", lang), 0.0, 2.0, 0.3, 0.1,
                                 help="0 = no drift, 2 = extreme drift")
 
         np.random.seed(123)
@@ -115,22 +89,19 @@ if dashboard_ready:
         drift_df = dashboard.data_drift_monitor.get_drift_summary_df(report)
 
         if not drift_df.empty:
-            # Summary
             c1, c2, c3 = st.columns(3)
             with c1:
-                st.metric("Features Analyzed", report.total_features)
+                st.metric(t("features_analyzed", lang), report.total_features)
             with c2:
-                drift_color = COLORS["success"] if report.drifted_features == 0 else COLORS["warning"]
-                st.metric("Drifted Features", report.drifted_features)
+                st.metric(t("drifted_features", lang), report.drifted_features)
             with c3:
-                st.metric("Overall Severity", report.overall_severity.upper())
+                st.metric(t("overall_severity", lang), report.overall_severity.upper())
 
-            # PSI chart
             fig = px.bar(
                 drift_df.sort_values("PSI", ascending=True),
                 x="PSI", y="Feature",
                 orientation="h",
-                title="Population Stability Index (PSI) by Feature",
+                title="Population Stability Index (PSI)",
                 color="Severity",
                 color_discrete_map={
                     "none": COLORS["success"],
@@ -138,7 +109,6 @@ if dashboard_ready:
                     "critical": COLORS["danger"],
                 },
             )
-            # Add threshold lines
             fig.add_vline(x=0.1, line_dash="dash", line_color=COLORS["warning"],
                           annotation_text="Warning (0.1)")
             fig.add_vline(x=0.2, line_dash="dash", line_color=COLORS["danger"],
@@ -147,22 +117,19 @@ if dashboard_ready:
             apply_plotly_theme(fig)
             st.plotly_chart(fig, use_container_width=True)
 
-            # Detailed table
             with st.expander("Detailed Drift Report"):
                 st.dataframe(drift_df, use_container_width=True, hide_index=True)
 
     # ─── Tab 2: Model Performance ───
     with tab2:
-        section_header("Model Performance Tracking", "AUC-ROC, F1, Precision, Recall over time")
+        section_header(t("perf_tracking", lang), t("perf_subtitle", lang))
 
-        # Simulate performance evaluations
         np.random.seed(42)
         n_evals = 10
-        perf_degradation = st.slider("Simulate Performance Degradation", 0.0, 0.15, 0.02, 0.01)
+        perf_degradation = st.slider(t("simulate_degradation", lang), 0.0, 0.15, 0.02, 0.01)
 
         for i in range(n_evals):
             n = 200
-            base_auc = 0.9467 - (i * perf_degradation)
             y_true = np.random.binomial(1, 0.37, n)
             noise = np.random.normal(0, 0.15, n)
             y_proba = np.clip(y_true * 0.7 + (1 - y_true) * 0.3 + noise - (i * perf_degradation * 0.5), 0, 1)
@@ -172,7 +139,6 @@ if dashboard_ready:
         drift_report = dashboard.model_drift_monitor.check_drift()
 
         if not perf_df.empty:
-            # Current vs baseline
             c1, c2, c3 = st.columns(3)
             with c1:
                 st.metric("Baseline AUC", f"{drift_report.baseline_auc:.4f}")
@@ -188,7 +154,6 @@ if dashboard_ready:
                 </div>
                 """, unsafe_allow_html=True)
 
-            # Performance trend
             fig = go.Figure()
             for metric in ["AUC-ROC", "F1", "Precision", "Recall"]:
                 if metric in perf_df.columns:
@@ -204,11 +169,10 @@ if dashboard_ready:
                     annotation_text="Baseline",
                 )
 
-            fig.update_layout(title="Performance Metrics Over Time", height=450)
+            fig.update_layout(title=t("perf_metrics_time", lang), height=450)
             apply_plotly_theme(fig)
             st.plotly_chart(fig, use_container_width=True)
 
-            # Recommendation
             if drift_report.recommendation:
                 box_type = "error" if "CRITICAL" in drift_report.recommendation else \
                            "warning" if "WARNING" in drift_report.recommendation else "success"
@@ -216,9 +180,8 @@ if dashboard_ready:
 
     # ─── Tab 3: Alerts ───
     with tab3:
-        section_header("Alert Dashboard", "Threshold-based monitoring alerts")
+        section_header(t("alert_dashboard", lang), t("alert_subtitle", lang))
 
-        # Run checks to generate alerts
         results = dashboard.run_full_check(
             current_data=current_data if 'current_data' in dir() else None,
         )
@@ -226,28 +189,25 @@ if dashboard_ready:
         alert_summary = dashboard.alert_manager.get_summary()
         a1, a2, a3, a4 = st.columns(4)
         with a1:
-            st.metric("Total Alerts", alert_summary["total_alerts"])
+            st.metric(t("alerts", lang), alert_summary["total_alerts"])
         with a2:
             st.metric("Active", alert_summary["active_alerts"])
         with a3:
-            st.metric("Critical", alert_summary["critical"],
-                       delta=None)
+            st.metric("Critical", alert_summary["critical"])
         with a4:
             st.metric("Warning", alert_summary["warning"])
 
         alerts_df = dashboard.get_alerts_df()
         if not alerts_df.empty:
-            # Color code by severity
             st.dataframe(alerts_df, use_container_width=True, hide_index=True)
 
-            if st.button("✅ Acknowledge All Alerts", use_container_width=True):
+            if st.button(f"✅ {t('acknowledge_all', lang)}", use_container_width=True):
                 count = dashboard.alert_manager.acknowledge_all()
                 st.success(f"Acknowledged {count} alerts")
                 st.rerun()
         else:
-            info_box("No alerts — all systems operating normally.", "success")
+            info_box(t("no_alerts", lang), "success")
 
-        # Alert rules
         with st.expander("Alert Rules Configuration"):
             rules_data = []
             for rule in dashboard.alert_manager.rules:
@@ -264,7 +224,7 @@ if dashboard_ready:
 
     # ─── Tab 4: Experiment Tracking ───
     with tab4:
-        section_header("MLflow Experiment Tracking", "Model training history and comparisons")
+        section_header(t("experiment_tracking", lang), t("exp_subtitle", lang))
 
         info_box(
             "MLflow experiment tracking is available when running with a local MLflow server. "
@@ -272,21 +232,17 @@ if dashboard_ready:
             "info",
         )
 
-        # Show model comparison from saved results
         results_path = ROOT_DIR / "models" / "cancellation" / "model_comparison.csv"
         if results_path.exists():
-            results = pd.read_csv(results_path, index_col=0)
+            results_df = pd.read_csv(results_path, index_col=0)
             display_cols = [c for c in ["auc_roc", "f1", "precision", "recall", "accuracy",
-                                         "cv_roc_auc", "cv_f1"] if c in results.columns]
+                                         "cv_roc_auc", "cv_f1"] if c in results_df.columns]
             st.dataframe(
-                results[display_cols].round(4).style.highlight_max(axis=0, color=COLORS["primary"]),
+                results_df[display_cols].round(4).style.highlight_max(axis=0, color=COLORS["primary"]),
                 use_container_width=True,
             )
-        else:
-            st.info("No training results found. Run the training pipeline first.")
 
-        # Model registry info
-        section_header("Model Registry")
+        section_header(t("model_registry", lang))
         st.markdown(f"""
         <div class="premium-card">
             <table style="width: 100%; color: {COLORS['text_secondary']};">
@@ -297,6 +253,41 @@ if dashboard_ready:
             </table>
         </div>
         """, unsafe_allow_html=True)
+
+    # ─── Health Score (after drift/perf analysis so it reflects current state) ───
+    # Recalculate based on drift and performance results
+    drift_penalty = 0
+    if 'report' in dir() and report.drifted_features > 0:
+        drift_penalty = min(report.drifted_features * 10, 40)
+
+    perf_penalty = 0
+    if 'drift_report' in dir() and drift_report.auc_drop_pct > 5:
+        perf_penalty = min(int(drift_report.auc_drop_pct * 2), 40)
+
+    adjusted_score = max(100 - drift_penalty - perf_penalty, 0)
+    adjusted_dq = max(40 - drift_penalty, 0)
+    adjusted_mp = max(40 - perf_penalty, 0)
+    adjusted_status = "healthy" if adjusted_score >= 80 else "warning" if adjusted_score >= 60 else "critical"
+
+    # Render health score at the top using st.container
+    health_container = st.container()
+    with health_container:
+        h1, h2, h3, h4 = st.columns(4)
+        with h1:
+            score_color = COLORS["success"] if adjusted_score >= 80 else COLORS["warning"] if adjusted_score >= 60 else COLORS["danger"]
+            st.markdown(f"""
+            <div class="premium-card" style="text-align: center;">
+                <div class="kpi-label">{t('health_score', lang)}</div>
+                <div class="kpi-value" style="color: {score_color}; font-size: 2.5rem;">{adjusted_score:.0f}</div>
+                <div>{status_badge(adjusted_status)}</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with h2:
+            st.metric(t("data_quality", lang), f"{adjusted_dq:.0f}/40")
+        with h3:
+            st.metric(t("model_performance", lang), f"{adjusted_mp:.0f}/40")
+        with h4:
+            st.metric(t("system_health", lang), "20/20")
 
 else:
     info_box(f"Dashboard initialization error: {dashboard_error}", "error")

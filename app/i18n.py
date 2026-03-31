@@ -489,6 +489,128 @@ TRANSLATIONS = {
         "no": "Med den beste modellen (AUC: {auc}) kan hotellet proaktivt haandtere hoeyrisikobestillinger og potensielt spare <b>2M+ EUR</b> aarlig.",
     },
 
+    # ─────────────── MLOps Page Details ───────────────
+    "mlops_desc": {
+        "en": "Real-time model monitoring, data drift detection, and alerting",
+        "tr": "Gercek zamanli model izleme, veri sapmasi tespiti ve uyari",
+        "de": "Echtzeit-Modellueberwachung, Datendrifterkennung und Alarmierung",
+        "no": "Sanntids modellovervaakning, datadriftdeteksjon og varsling",
+    },
+    "data_drift_analysis": {
+        "en": "Data Drift Analysis",
+        "tr": "Veri Sapmasi Analizi",
+        "de": "Datendriftanalyse",
+        "no": "Datadriftanalyse",
+    },
+    "drift_subtitle": {
+        "en": "PSI and KS test results for feature distributions",
+        "tr": "Ozellik dagilimlarinin PSI ve KS test sonuclari",
+        "de": "PSI- und KS-Testergebnisse fuer Merkmalverteilungen",
+        "no": "PSI- og KS-testresultater for funksjonsfordelinger",
+    },
+    "simulate_drift": {
+        "en": "Simulate Drift Level",
+        "tr": "Sapma Seviyesi Simule Et",
+        "de": "Driftniveau Simulieren",
+        "no": "Simuler Driftnivaa",
+    },
+    "features_analyzed": {
+        "en": "Features Analyzed",
+        "tr": "Analiz Edilen Ozellikler",
+        "de": "Analysierte Merkmale",
+        "no": "Analyserte Funksjoner",
+    },
+    "drifted_features": {
+        "en": "Drifted Features",
+        "tr": "Sapma Gosteren Ozellikler",
+        "de": "Gedriftete Merkmale",
+        "no": "Driftede Funksjoner",
+    },
+    "overall_severity": {
+        "en": "Overall Severity",
+        "tr": "Genel Siddet",
+        "de": "Gesamtschweregrad",
+        "no": "Samlet Alvorlighetsgrad",
+    },
+    "perf_tracking": {
+        "en": "Model Performance Tracking",
+        "tr": "Model Performans Takibi",
+        "de": "Modellleistungsverfolgung",
+        "no": "Modellytelsesoppfoelging",
+    },
+    "perf_subtitle": {
+        "en": "AUC-ROC, F1, Precision, Recall over time",
+        "tr": "Zaman icinde AUC-ROC, F1, Precision, Recall",
+        "de": "AUC-ROC, F1, Precision, Recall im Zeitverlauf",
+        "no": "AUC-ROC, F1, Presisjon, Recall over tid",
+    },
+    "simulate_degradation": {
+        "en": "Simulate Performance Degradation",
+        "tr": "Performans Dususu Simule Et",
+        "de": "Leistungsabfall Simulieren",
+        "no": "Simuler Ytelsesforringelse",
+    },
+    "alert_dashboard": {
+        "en": "Alert Dashboard",
+        "tr": "Uyari Paneli",
+        "de": "Alarm-Dashboard",
+        "no": "Varselpanel",
+    },
+    "alert_subtitle": {
+        "en": "Threshold-based monitoring alerts",
+        "tr": "Esik deger tabanli izleme uyarilari",
+        "de": "Schwellenwertbasierte Ueberwachungsalarme",
+        "no": "Terskelbaserte overvaakningsvarsler",
+    },
+    "experiment_tracking": {
+        "en": "Experiment Tracking",
+        "tr": "Deney Takibi",
+        "de": "Experimentverfolgung",
+        "no": "Eksperimentsporing",
+    },
+    "exp_subtitle": {
+        "en": "Model training history and comparisons",
+        "tr": "Model egitim gecmisi ve karsilastirmalar",
+        "de": "Modelltrainingshistorie und Vergleiche",
+        "no": "Modelltreningshistorikk og sammenligninger",
+    },
+    "model_registry": {
+        "en": "Model Registry",
+        "tr": "Model Kayit Defteri",
+        "de": "Modellregistrierung",
+        "no": "Modellregister",
+    },
+    "acknowledge_all": {
+        "en": "Acknowledge All Alerts",
+        "tr": "Tum Uyarilari Onayla",
+        "de": "Alle Alarme Bestaetigen",
+        "no": "Bekreft Alle Varsler",
+    },
+    "no_alerts": {
+        "en": "No alerts — all systems operating normally.",
+        "tr": "Uyari yok — tum sistemler normal calisiyor.",
+        "de": "Keine Alarme — alle Systeme arbeiten normal.",
+        "no": "Ingen varsler — alle systemer fungerer normalt.",
+    },
+    "perf_metrics_time": {
+        "en": "Performance Metrics Over Time",
+        "tr": "Zaman Icinde Performans Metrikleri",
+        "de": "Leistungsmetriken im Zeitverlauf",
+        "no": "Ytelsesmetrikker Over Tid",
+    },
+    "data_quality": {
+        "en": "Data Quality",
+        "tr": "Veri Kalitesi",
+        "de": "Datenqualitaet",
+        "no": "Datakvalitet",
+    },
+    "system_health": {
+        "en": "System Health",
+        "tr": "Sistem Sagligi",
+        "de": "Systemgesundheit",
+        "no": "Systemhelse",
+    },
+
     # ─────────────── Common ───────────────
     "loading": {
         "en": "Loading...",
