@@ -126,6 +126,9 @@ pip install --pre -r requirements.txt
 # Generate synthetic data
 python data/synthetic/generate_all.py
 
+# Initialize chatbot database (creates SQLite from CSV files)
+python -c "from src.module_3_conversational.database.init_db import initialize_database; initialize_database()"
+
 # Run the Streamlit app
 streamlit run app/main.py
 ```
