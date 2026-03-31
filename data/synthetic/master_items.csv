@@ -1,0 +1,1201 @@
+item_id,dirty_name,standard_name,category,unit_price,source_system
+ITM0001,deep tissue mass.,Deep Tissue Massage 60min,Spa,114.14,POS_Restaurant
+ITM0002,grld chicken,Grilled Chicken Breast,Food,42.48,PMS
+ITM0003,Coke 330ml,Coca-Cola 330ml,Beverage,86.16,Manual
+ITM0004, Margarita Pizza,Margherita Pizza,Food,6.36,POS_Restaurant
+ITM0005,draught  beer,Local Beer Draft 500ml,Beverage,60.49,POS_Spa
+ITM0006, caesar salad,Caesar Salad,Food,83.77,POS_Restaurant
+ITM0007,glass of white wine,House White Wine (Glass),Beverage,105.31,POS_Spa
+ITM0008,Transfer Airport,Airport Transfer One Way,Service,19.01,Manual
+ITM0009,coke,Coca-Cola 330ml,Beverage,66.17,POS_Spa
+ITM0010,DRY CLEANING,Dry Cleaning (per item),Service,13.8,POS_Restaurant
+ITM0011,GRILLED CHICKEN,Grilled Chicken Breast,Food,36.8,POS_Bar
+ITM0012,pommes frites,French Fries,Food,89.92,POS_Bar
+ITM0013,Pepsi Cola 500 ,Pepsi 500ml,Beverage,95.93,POS_Restaurant
+ITM0014,drft beer,Local Beer Draft 500ml,Beverage,68.34,POS_Spa
+ITM0015,cheese burger,Beef Burger,Food,36.08,POS_Bar
+ITM0016,club sandwhich,Club Sandwich,Food,69.95,POS_Restaurant
+ITM0017,peps 500ml,Pepsi 500ml,Beverage,120.27,Manual
+ITM0018,cafe latte,Latte,Beverage,123.23,POS_Spa
+ITM0019,pepsi cola,Pepsi 500ml,Beverage,111.37,POS_Restaurant
+ITM0020,Ceasar Salad,Caesar Salad,Food,102.46,PMS
+ITM0021,prkg daily,Underground Parking (per day),Service,89.15,PMS
+ITM0022,Dry Clean,Dry Cleaning (per item),Service,127.85,POS_Bar
+ITM0023,white wine,House White Wine (Glass),Beverage,93.29,PMS
+ITM0024,SPAGHETTI BOL,Spaghetti Bolognese,Food,134.3,POS_Bar
+ITM0025,swedish mass. 60,Swedish Massage 60min,Spa,41.41,Manual
+ITM0026,BEER,Local Beer Draft 500ml,Beverage,24.21,POS_Restaurant
+ITM0027,Margarita Pizza,Margherita Pizza,Food,142.36,POS_Spa
+ITM0028,glass of red wine,House Red Wine (Glass),Beverage,25.06,Manual
+ITM0029,Schoko Kuchen,Chocolate Cake,Food,127.33,PMS
+ITM0030,cheese burger,Beef Burger,Food,103.91,PMS
+ITM0031,Parking p/day,Underground Parking (per day),Service,124.17,POS_Restaurant
+ITM0032,Pepsi 50cl,Pepsi 500ml,Beverage,36.73,POS_Spa
+ITM0033,parking ,Underground Parking (per day),Service,41.72,POS_Bar
+ITM0034,glass of red wine,House Red Wine (Glass),Beverage,140.03,POS_Bar
+ITM0035,choc cake,Chocolate Cake,Food,36.72,Manual
+ITM0036,Srpite,Sprite 330ml,Beverage,105.24,POS_Spa
+ITM0037,white wine glass,House White Wine (Glass),Beverage,112.13,POS_Restaurant
+ITM0038,Swedish 60min,Swedish Massage 60min,Spa,123.94,PMS
+ITM0039,LAUNDRY,Laundry Service (per item),Service,110.77,POS_Spa
+ITM0040,white  wine  glass,House White Wine (Glass),Beverage,87.58,POS_Restaurant
+ITM0041,chips,French Fries,Food,148.41,POS_Restaurant
+ITM0042,local beer,Local Beer Draft 500ml,Beverage,117.19,POS_Bar
+ITM0043,swedish massage,Swedish Massage 60min,Spa,5.79,POS_Spa
+ITM0044,Margherita Pzza ,Margherita Pizza,Food,41.73,POS_Restaurant
+ITM0045,Diet Coke 330ml,Coca-Cola 330ml,Beverage,47.72,PMS
+ITM0046,Schoko Kuchen,Chocolate Cake,Food,95.48,POS_Restaurant
+ITM0047,local beer,Local Beer Draft 500ml,Beverage,25.58,POS_Restaurant
+ITM0048, French Fries,French Fries,Food,34.66,POS_Spa
+ITM0049,laundry per piece,Laundry Service (per item),Service,138.33,Manual
+ITM0050,wash + iron,Laundry Service (per item),Service,69.72,POS_Spa
+ITM0051,SPRITE 330 ,Sprite 330ml,Beverage,33.35,POS_Bar
+ITM0052,deep tissue 60,Deep Tissue Massage 60min,Spa,18.26,PMS
+ITM0053, WATER 500,Still Water 500ml,Beverage,45.36,POS_Spa
+ITM0054,pepsi 500,Pepsi 500ml,Beverage,136.79,POS_Bar
+ITM0055,RED WINE,House Red Wine (Glass),Beverage,6.09,POS_Restaurant
+ITM0056,dry cleaning,Dry Cleaning (per item),Service,45.32,PMS
+ITM0057,RED WINE,House Red Wine (Glass),Beverage,103.67,Manual
+ITM0058,grilled chicken,Grilled Chicken Breast,Food,111.41,POS_Bar
+ITM0059,peps 500ml,Pepsi 500ml,Beverage,58.72,Manual
+ITM0060, caffe latte,Latte,Beverage,11.02,POS_Spa
+ITM0061,grld chicken,Grilled Chicken Breast,Food,78.92,POS_Spa
+ITM0062,bolognese pasta,Spaghetti Bolognese,Food,30.79,POS_Bar
+ITM0063,DRY CLEANING,Dry Cleaning (per item),Service,68.31,POS_Spa
+ITM0064,SPRITE 330,Sprite 330ml,Beverage,53.57,POS_Bar
+ITM0065,Beef Burger,Beef Burger,Food,111.31,Manual
+ITM0066,margherita,Margherita Pizza,Food,19.95,POS_Restaurant
+ITM0067,SPRITE 330,Sprite 330ml,Beverage,86.72,POS_Restaurant
+ITM0068,Swedish 60min,Swedish Massage 60min,Spa,62.34,POS_Restaurant
+ITM0069,Swedish 60min,Swedish Massage 60min,Spa,25.62,POS_Spa
+ITM0070,BURGER,Beef Burger,Food,99.81,Manual
+ITM0071,Parking 1 day,Underground Parking (per day),Service,14.85,POS_Bar
+ITM0072, Srpite,Sprite 330ml,Beverage,107.95,PMS
+ITM0073,Parking p/day,Underground Parking (per day),Service,95.51,POS_Restaurant
+ITM0074,chocolate ck,Chocolate Cake,Food,97.78,POS_Bar
+ITM0075,Spagetti Bolognese,Spaghetti Bolognese,Food,81.9,POS_Restaurant
+ITM0076,fries,French Fries,Food,14.86,POS_Spa
+ITM0077,chicken brst grilled,Grilled Chicken Breast,Food,16.16,PMS
+ITM0078,FRIES,French Fries,Food,133.9,POS_Spa
+ITM0079,PARKING,Underground Parking (per day),Service,35.82,PMS
+ITM0080,fresh OJ,Fresh Orange Juice,Beverage,137.43,POS_Restaurant
+ITM0081,1x espresso,Espresso,Beverage,149.94,POS_Spa
+ITM0082,facial,Facial Treatment,Spa,45.3,POS_Restaurant
+ITM0083,skin facial,Facial Treatment,Spa,66.68,POS_Bar
+ITM0084,airprt transfer 1way,Airport Transfer One Way,Service,149.69,POS_Bar
+ITM0085,House White,House White Wine (Glass),Beverage,99.73,PMS
+ITM0086,deep tissue mass.,Deep Tissue Massage 60min,Spa,81.76,POS_Bar
+ITM0087,LATTE,Latte,Beverage,83.48,POS_Restaurant
+ITM0088,ESPRESSO,Espresso,Beverage,16.52,Manual
+ITM0089,FACIAL,Facial Treatment,Spa,51.15,Manual
+ITM0090, WATER 500,Still Water 500ml,Beverage,24.48,POS_Restaurant
+ITM0091,deep tissue 60,Deep Tissue Massage 60min,Spa,86.91,PMS
+ITM0092,Pepsii 500ml,Pepsi 500ml,Beverage,147.66,Manual
+ITM0093,bier  500,Local Beer Draft 500ml,Beverage,124.37,POS_Bar
+ITM0094,white wine,House White Wine (Glass),Beverage,85.4,POS_Restaurant
+ITM0095,wine red,House Red Wine (Glass),Beverage,36.79,POS_Bar
+ITM0096,CHOC  CAKE,Chocolate Cake,Food,29.42,POS_Bar
+ITM0097,facial treatmnt,Facial Treatment,Spa,119.76,PMS
+ITM0098,parking,Underground Parking (per day),Service,62.8,POS_Bar
+ITM0099,spag bol,Spaghetti Bolognese,Food,65.94,POS_Bar
+ITM0100,sprkl water,Sparkling Water 500ml,Beverage,147.99,POS_Restaurant
+ITM0101,transfer to airport,Airport Transfer One Way,Service,116.41,POS_Restaurant
+ITM0102,parking,Underground Parking (per day),Service,25.5,POS_Spa
+ITM0103,grilled chicken,Grilled Chicken Breast,Food,128.62,POS_Restaurant
+ITM0104,beer 500ml,Local Beer Draft 500ml,Beverage,139.7,Manual
+ITM0105,laundry svc,Laundry Service (per item),Service,71.71,PMS
+ITM0106,pommes frites,French Fries,Food,53.91,POS_Restaurant
+ITM0107, Parking 1 day,Underground Parking (per day),Service,72.16,PMS
+ITM0108,Club SW,Club Sandwich,Food,40.49,POS_Bar
+ITM0109,RED WINE ,House Red Wine (Glass),Beverage,23.16,POS_Bar
+ITM0110,Coka Cola,Coca-Cola 330ml,Beverage,40.31,POS_Restaurant
+ITM0111,red wine glass,House Red Wine (Glass),Beverage,35.44,POS_Bar
+ITM0112,DT massage 60min,Deep Tissue Massage 60min,Spa,48.29,PMS
+ITM0113,car park 1d,Underground Parking (per day),Service,57.39,POS_Restaurant
+ITM0114,frsh orange juice,Fresh Orange Juice,Beverage,130.82,PMS
+ITM0115,cafe cappuccino,Cappuccino,Beverage,148.79,POS_Bar
+ITM0116,OJ,Fresh Orange Juice,Beverage,11.37,Manual
+ITM0117,deep tissue mass.,Deep Tissue Massage 60min,Spa,131.47,POS_Restaurant
+ITM0118,Caeser Salad,Caesar Salad,Food,60.99,POS_Restaurant
+ITM0119,coca-cola 330,Coca-Cola 330ml,Beverage,146.79,POS_Restaurant
+ITM0120,SPAGHETTI BOL,Spaghetti Bolognese,Food,13.96,POS_Restaurant
+ITM0121,Cafe Latte,Latte,Beverage,56.34,POS_Restaurant
+ITM0122,PEPSI,Pepsi 500ml,Beverage,128.04,PMS
+ITM0123,pepsi cola,Pepsi 500ml,Beverage,25.72,POS_Restaurant
+ITM0124,french fries ,French Fries,Food,30.34,Manual
+ITM0125,cafe cappuccino,Cappuccino,Beverage,49.12,POS_Restaurant
+ITM0126,CAESAR SALAD,Caesar Salad,Food,57.47,POS_Restaurant
+ITM0127,swedish massage,Swedish Massage 60min,Spa,90.01,PMS
+ITM0128,coca cola,Coca-Cola 330ml,Beverage,141.9,PMS
+ITM0129,spag bol,Spaghetti Bolognese,Food,42.0,PMS
+ITM0130, CAESAR SALAD,Caesar Salad,Food,143.9,POS_Restaurant
+ITM0131,deep tissue mass.,Deep Tissue Massage 60min,Spa,81.51,POS_Restaurant
+ITM0132,sprkl water,Sparkling Water 500ml,Beverage,72.88,PMS
+ITM0133,Pepsii 500ml,Pepsi 500ml,Beverage,51.92,POS_Bar
+ITM0134,Coka Cola,Coca-Cola 330ml,Beverage,99.35,Manual
+ITM0135,parking,Underground Parking (per day),Service,69.88,Manual
+ITM0136,choco cake,Chocolate Cake,Food,147.84,POS_Restaurant
+ITM0137,laundry,Laundry Service (per item),Service,79.27,PMS
+ITM0138,choco cake,Chocolate Cake,Food,88.19,PMS
+ITM0139,DRY CLEANING,Dry Cleaning (per item),Service,142.85,PMS
+ITM0140, 1x espresso,Espresso,Beverage,146.34,POS_Restaurant
+ITM0141,cesar salad,Caesar Salad,Food,121.47,PMS
+ITM0142,Expresso,Espresso,Beverage,127.88,Manual
+ITM0143,pepsi  cola,Pepsi 500ml,Beverage,131.55,PMS
+ITM0144,beer 500ml,Local Beer Draft 500ml,Beverage,134.71,Manual
+ITM0145,cheese burger,Beef Burger,Food,19.39,POS_Spa
+ITM0146,dry cleaning 1pc,Dry Cleaning (per item),Service,94.92,PMS
+ITM0147,chocolate ck,Chocolate Cake,Food,148.5,POS_Restaurant
+ITM0148,BEER,Local Beer Draft 500ml,Beverage,6.34,PMS
+ITM0149,WATER 500,Still Water 500ml,Beverage,125.62,POS_Restaurant
+ITM0150,face treatment,Facial Treatment,Spa,26.71,POS_Restaurant
+ITM0151,aqua 500,Still Water 500ml,Beverage,108.69,POS_Spa
+ITM0152,glass of white wine,House White Wine (Glass),Beverage,54.07,POS_Restaurant
+ITM0153,pommes frites,French Fries,Food,123.49,PMS
+ITM0154,single espresso,Espresso,Beverage,81.6,POS_Restaurant
+ITM0155,FACIAL,Facial Treatment,Spa,32.93,POS_Restaurant
+ITM0156,FRIES,French Fries,Food,88.13,POS_Bar
+ITM0157,Parking 1 day,Underground Parking (per day),Service,108.76,POS_Restaurant
+ITM0158,cesar salad,Caesar Salad,Food,91.92,POS_Restaurant
+ITM0159,prkg daily,Underground Parking (per day),Service,38.11,PMS
+ITM0160,fries,French Fries,Food,138.95,POS_Spa
+ITM0161,Sparkling 500ml,Sparkling Water 500ml,Beverage,52.4,PMS
+ITM0162,orange juice,Fresh Orange Juice,Beverage,45.53,POS_Restaurant
+ITM0163,ESPRESSO,Espresso,Beverage,135.07,POS_Spa
+ITM0164,French Fries,French Fries,Food,131.48,Manual
+ITM0165,CAESAR SALAD,Caesar Salad,Food,85.1,POS_Restaurant
+ITM0166,dry cleaning,Dry Cleaning (per item),Service,142.18,POS_Restaurant
+ITM0167,Diet Coke 330ml,Coca-Cola 330ml,Beverage,144.82,POS_Spa
+ITM0168,Cappucino,Cappuccino,Beverage,137.62,POS_Restaurant
+ITM0169,Cappucino,Cappuccino,Beverage,108.67,POS_Spa
+ITM0170,CLUB SANDWICH,Club Sandwich,Food,79.57,POS_Restaurant
+ITM0171,cafe latte,Latte,Beverage,10.88,POS_Spa
+ITM0172,club sandwhich,Club Sandwich,Food,4.77,POS_Bar
+ITM0173,ESPRESSO,Espresso,Beverage,19.92,POS_Spa
+ITM0174,WATER 500,Still Water 500ml,Beverage,72.0,Manual
+ITM0175,COCA-COLA,Coca-Cola 330ml,Beverage,114.31,PMS
+ITM0176,chicken brst grilled,Grilled Chicken Breast,Food,46.68,PMS
+ITM0177,mineral water,Still Water 500ml,Beverage,130.13,POS_Restaurant
+ITM0178,House Red,House Red Wine (Glass),Beverage,91.57,PMS
+ITM0179,caesar salad,Caesar Salad,Food,148.58,POS_Bar
+ITM0180,dry cln,Dry Cleaning (per item),Service,112.4,POS_Spa
+ITM0181,wash + iron,Laundry Service (per item),Service,83.94,PMS
+ITM0182,LATTE,Latte,Beverage,63.2,PMS
+ITM0183,Chicken Breast,Grilled Chicken Breast,Food,116.8,POS_Restaurant
+ITM0184,caesar salad,Caesar Salad,Food,73.88,POS_Restaurant
+ITM0185,pollo alla griglia,Grilled Chicken Breast,Food,63.09,PMS
+ITM0186, Coke 330ml,Coca-Cola 330ml,Beverage,99.27,POS_Restaurant
+ITM0187,spag bol,Spaghetti Bolognese,Food,139.39,Manual
+ITM0188,spag bol,Spaghetti Bolognese,Food,61.07,PMS
+ITM0189,SPAGHETTI BOL,Spaghetti Bolognese,Food,20.93,POS_Restaurant
+ITM0190,glass of white wine,House White Wine (Glass),Beverage,144.79,POS_Restaurant
+ITM0191,burger,Beef Burger,Food,113.04,POS_Restaurant
+ITM0192,transfer to airport,Airport Transfer One Way,Service,27.89,POS_Restaurant
+ITM0193,Cappucino,Cappuccino,Beverage,131.6,PMS
+ITM0194,bolognese pasta,Spaghetti Bolognese,Food,112.09,PMS
+ITM0195,1x espresso,Espresso,Beverage,68.98,POS_Spa
+ITM0196,Chicken Breast,Grilled Chicken Breast,Food,37.99,POS_Restaurant
+ITM0197,esprso,Espresso,Beverage,82.49,PMS
+ITM0198,wine white,House White Wine (Glass),Beverage,145.88,PMS
+ITM0199,face treatment,Facial Treatment,Spa,114.99,Manual
+ITM0200,laundry per piece,Laundry Service (per item),Service,53.44,POS_Bar
+ITM0201,SPRITE 330,Sprite 330ml,Beverage,59.31,PMS
+ITM0202,Margherita Pzza,Margherita Pizza,Food,97.04,PMS
+ITM0203,cap.,Cappuccino,Beverage,68.9,PMS
+ITM0204,Swdsh Massage 1hr,Swedish Massage 60min,Spa,124.89,POS_Spa
+ITM0205,sprkl water,Sparkling Water 500ml,Beverage,7.54,POS_Bar
+ITM0206,Pepsii 500ml,Pepsi 500ml,Beverage,137.03,POS_Restaurant
+ITM0207,face treatment,Facial Treatment,Spa,93.0,POS_Bar
+ITM0208,wash + iron ,Laundry Service (per item),Service,7.67,PMS
+ITM0209,SPARKLING,Sparkling Water 500ml,Beverage,15.97,POS_Restaurant
+ITM0210,caesar sld ,Caesar Salad,Food,131.59,POS_Bar
+ITM0211,capuccino,Cappuccino,Beverage,8.01,PMS
+ITM0212,RED WINE,House Red Wine (Glass),Beverage,36.56,PMS
+ITM0213,Schoko Kuchen,Chocolate Cake,Food,16.0,POS_Bar
+ITM0214,car park 1d,Underground Parking (per day),Service,100.1,POS_Restaurant
+ITM0215,cappucc.,Cappuccino,Beverage,44.11,POS_Spa
+ITM0216,laundry svc,Laundry Service (per item),Service,61.38,POS_Bar
+ITM0217,SPRITE 330 ,Sprite 330ml,Beverage,70.6,PMS
+ITM0218,hse red wine,House Red Wine (Glass),Beverage,24.62,POS_Bar
+ITM0219,SWEDISH MASSAGE,Swedish Massage 60min,Spa,134.92,POS_Bar
+ITM0220,PEPSI,Pepsi 500ml,Beverage,88.84,POS_Restaurant
+ITM0221,WHITE WINE,House White Wine (Glass),Beverage,40.18,PMS
+ITM0222,facial,Facial Treatment,Spa,111.28,PMS
+ITM0223,Ceasar Salad,Caesar Salad,Food,117.31,POS_Restaurant
+ITM0224,DT massage 60min,Deep Tissue Massage 60min,Spa,36.94,POS_Bar
+ITM0225, French Fries,French Fries,Food,75.5,Manual
+ITM0226,CAESAR SALAD,Caesar Salad,Food,113.5,POS_Bar
+ITM0227,local beer,Local Beer Draft 500ml,Beverage,128.39,POS_Restaurant
+ITM0228,french fries,French Fries,Food,11.09,PMS
+ITM0229,FRIES,French Fries,Food,27.88,POS_Restaurant
+ITM0230,Caeser Salad,Caesar Salad,Food,33.63,PMS
+ITM0231,facial,Facial Treatment,Spa,42.64,PMS
+ITM0232,Margarita Pizza ,Margherita Pizza,Food,60.63,Manual
+ITM0233,Coka Cola,Coca-Cola 330ml,Beverage,84.13,POS_Restaurant
+ITM0234,cappucc.,Cappuccino,Beverage,14.9,POS_Spa
+ITM0235,CLUB SANDWICH,Club Sandwich,Food,59.56,PMS
+ITM0236,Laundry 1 item,Laundry Service (per item),Service,72.23,POS_Restaurant
+ITM0237,club sandwhich,Club Sandwich,Food,8.51,PMS
+ITM0238,sparkling water,Sparkling Water 500ml,Beverage,37.65,POS_Bar
+ITM0239,cafe cappuccino,Cappuccino,Beverage,78.25,Manual
+ITM0240,pepsi 500,Pepsi 500ml,Beverage,65.75,PMS
+ITM0241,Srpite,Sprite 330ml,Beverage,50.59,POS_Restaurant
+ITM0242,cappucc.,Cappuccino,Beverage,142.37,POS_Restaurant
+ITM0243,Coka Cola,Coca-Cola 330ml,Beverage,135.24,POS_Restaurant
+ITM0244,Orange J.,Fresh Orange Juice,Beverage,109.75,POS_Bar
+ITM0245,pizza marg.,Margherita Pizza,Food,16.29,POS_Spa
+ITM0246,club  sandwich,Club Sandwich,Food,82.46,PMS
+ITM0247,Orange J.,Fresh Orange Juice,Beverage,103.93,POS_Restaurant
+ITM0248,still water,Still Water 500ml,Beverage,127.58,PMS
+ITM0249,deep tissue mass.,Deep Tissue Massage 60min,Spa,108.81,POS_Restaurant
+ITM0250,laundry svc,Laundry Service (per item),Service,123.43,PMS
+ITM0251,choco cake ,Chocolate Cake,Food,13.92,PMS
+ITM0252,Diet Coke 330ml,Coca-Cola 330ml,Beverage,14.65,POS_Restaurant
+ITM0253,lndry service,Laundry Service (per item),Service,39.82,POS_Bar
+ITM0254,SPARKLING,Sparkling Water 500ml,Beverage,14.97,POS_Bar
+ITM0255,Deep Tissue,Deep Tissue Massage 60min,Spa,144.13,POS_Restaurant
+ITM0256,pepsi 500,Pepsi 500ml,Beverage,48.75,POS_Restaurant
+ITM0257,frech fries,French Fries,Food,70.65,POS_Bar
+ITM0258,H2O 500ml,Still Water 500ml,Beverage,99.67,Manual
+ITM0259,coca-cola 330,Coca-Cola 330ml,Beverage,30.3,Manual
+ITM0260,cheese burger,Beef Burger,Food,32.95,POS_Restaurant
+ITM0261,BEER,Local Beer Draft 500ml,Beverage,10.14,POS_Bar
+ITM0262,choc cake,Chocolate Cake,Food,106.17,POS_Restaurant
+ITM0263,DRY CLEANING,Dry Cleaning (per item),Service,96.24,POS_Bar
+ITM0264, FF,French Fries,Food,115.28,POS_Spa
+ITM0265,swedish mass. 60 ,Swedish Massage 60min,Spa,29.22,POS_Spa
+ITM0266,1x espresso,Espresso,Beverage,125.92,POS_Bar
+ITM0267,skin facial ,Facial Treatment,Spa,38.52,POS_Spa
+ITM0268,Coca Cola Can,Coca-Cola 330ml,Beverage,132.6,POS_Spa
+ITM0269,dry cleaning,Dry Cleaning (per item),Service,75.35,POS_Bar
+ITM0270,Srpite,Sprite 330ml,Beverage,88.56,PMS
+ITM0271,draft beer,Local Beer Draft 500ml,Beverage,29.84,POS_Restaurant
+ITM0272,Deep Tissue,Deep Tissue Massage 60min,Spa,17.43,POS_Bar
+ITM0273,PARKING,Underground Parking (per day),Service,70.28,POS_Bar
+ITM0274,facial,Facial Treatment,Spa,143.26,POS_Spa
+ITM0275,caesar sld,Caesar Salad,Food,8.98,PMS
+ITM0276,frech fries,French Fries,Food,142.74,POS_Restaurant
+ITM0277,laundry,Laundry Service (per item),Service,81.85,Manual
+ITM0278,ESPRESSO,Espresso,Beverage,117.01,POS_Restaurant
+ITM0279,Margarita Pizza,Margherita Pizza,Food,99.29,POS_Bar
+ITM0280, DRY CLEANING,Dry Cleaning (per item),Service,21.68,PMS
+ITM0281,WHITE WINE ,House White Wine (Glass),Beverage,123.91,PMS
+ITM0282,PEPSI,Pepsi 500ml,Beverage,63.67,PMS
+ITM0283,Margherita Pzza,Margherita Pizza,Food,120.96,Manual
+ITM0284,DRY  CLEANING,Dry Cleaning (per item),Service,78.27,Manual
+ITM0285,Chocolate Cake,Chocolate Cake,Food,30.32,POS_Spa
+ITM0286,SWEDISH MASSAGE,Swedish Massage 60min,Spa,118.68,POS_Restaurant
+ITM0287,GRILLED CHICKEN,Grilled Chicken Breast,Food,18.85,Manual
+ITM0288,chips,French Fries,Food,89.78,POS_Bar
+ITM0289,CLUB SANDWICH ,Club Sandwich,Food,25.36,POS_Spa
+ITM0290,Spagetti Bolognese,Spaghetti Bolognese,Food,2.34,POS_Restaurant
+ITM0291,PEPSI,Pepsi 500ml,Beverage,102.02,POS_Restaurant
+ITM0292,grld chicken,Grilled Chicken Breast,Food,148.66,PMS
+ITM0293,transfer to airport,Airport Transfer One Way,Service,36.1,POS_Bar
+ITM0294,Swdsh Massage 1hr,Swedish Massage 60min,Spa,143.55,Manual
+ITM0295,WATER 500,Still Water 500ml,Beverage,106.2,POS_Restaurant
+ITM0296,AIRPORT  TRANSFER,Airport Transfer One Way,Service,82.25,PMS
+ITM0297,LATTE,Latte,Beverage,61.0,POS_Bar
+ITM0298,pizza marg.,Margherita Pizza,Food,16.77,POS_Bar
+ITM0299,massage swedish 60,Swedish Massage 60min,Spa,135.42,Manual
+ITM0300,laundry per piece ,Laundry Service (per item),Service,53.72,PMS
+ITM0301,chocolate ck,Chocolate Cake,Food,148.56,POS_Bar
+ITM0302,Laundry 1 item,Laundry Service (per item),Service,106.52,POS_Restaurant
+ITM0303,capuccino,Cappuccino,Beverage,69.01,POS_Bar
+ITM0304,coca-cola 330,Coca-Cola 330ml,Beverage,95.68,POS_Bar
+ITM0305,FACIAL,Facial Treatment,Spa,131.39,Manual
+ITM0306,face treatment,Facial Treatment,Spa,55.95,POS_Spa
+ITM0307,chemical cleaning,Dry Cleaning (per item),Service,61.36,PMS
+ITM0308,wash + iron,Laundry Service (per item),Service,44.72,POS_Bar
+ITM0309,sprite 33cl,Sprite 330ml,Beverage,12.34,PMS
+ITM0310,draft beer,Local Beer Draft 500ml,Beverage,20.02,POS_Restaurant
+ITM0311,Margarita  Pizza,Margherita Pizza,Food,77.8,Manual
+ITM0312,swedish massage,Swedish Massage 60min,Spa,79.18,POS_Bar
+ITM0313,hse white wine,House White Wine (Glass),Beverage,75.57,POS_Bar
+ITM0314,swedish massage,Swedish Massage 60min,Spa,50.87,PMS
+ITM0315,frsh orange juice,Fresh Orange Juice,Beverage,7.82,POS_Bar
+ITM0316,Cafe Latte,Latte,Beverage,94.65,POS_Restaurant
+ITM0317,Pepsi Cola 500,Pepsi 500ml,Beverage,74.94,POS_Restaurant
+ITM0318,Swedish 60min,Swedish Massage 60min,Spa,7.44,POS_Spa
+ITM0319,Diet Coke 330ml,Coca-Cola 330ml,Beverage,102.33,POS_Restaurant
+ITM0320, laundry,Laundry Service (per item),Service,95.05,POS_Bar
+ITM0321,glass  of  red  wine,House Red Wine (Glass),Beverage,25.45,POS_Bar
+ITM0322,Diet Coke 330ml,Coca-Cola 330ml,Beverage,99.88,POS_Bar
+ITM0323, Pizza Margherita,Margherita Pizza,Food,112.45,POS_Bar
+ITM0324, massage swedish 60,Swedish Massage 60min,Spa,47.81,POS_Restaurant
+ITM0325,fizzy  water  500,Sparkling Water 500ml,Beverage,118.21,PMS
+ITM0326,white wine,House White Wine (Glass),Beverage,30.45,PMS
+ITM0327,CAPPUCCINO,Cappuccino,Beverage,36.49,Manual
+ITM0328,airprt transfer 1way,Airport Transfer One Way,Service,61.27,PMS
+ITM0329,sprite,Sprite 330ml,Beverage,43.86,Manual
+ITM0330,ORANGE JUICE,Fresh Orange Juice,Beverage,132.1,POS_Restaurant
+ITM0331,aqua 500,Still Water 500ml,Beverage,119.02,POS_Restaurant
+ITM0332,Diet Coke 330ml,Coca-Cola 330ml,Beverage,120.37,POS_Restaurant
+ITM0333,House Red,House Red Wine (Glass),Beverage,124.77,PMS
+ITM0334,cafe cappuccino,Cappuccino,Beverage,69.11,Manual
+ITM0335,DT  massage  60min,Deep Tissue Massage 60min,Spa,54.6,Manual
+ITM0336,airprt transfer 1way,Airport Transfer One Way,Service,44.73,POS_Restaurant
+ITM0337,fries,French Fries,Food,146.2,POS_Restaurant
+ITM0338,Spag. Bolognese,Spaghetti Bolognese,Food,13.92,Manual
+ITM0339,choco cake,Chocolate Cake,Food,106.33,POS_Spa
+ITM0340,underground parking,Underground Parking (per day),Service,36.42,PMS
+ITM0341,Deep Tissue,Deep Tissue Massage 60min,Spa,40.97,POS_Bar
+ITM0342,caesar salad,Caesar Salad,Food,55.98,POS_Spa
+ITM0343,underground parking,Underground Parking (per day),Service,23.45,POS_Bar
+ITM0344,caesar sld,Caesar Salad,Food,115.29,Manual
+ITM0345,Ceasar Salad ,Caesar Salad,Food,142.33,POS_Spa
+ITM0346,LATTE ,Latte,Beverage,65.77,POS_Spa
+ITM0347,caesar sld,Caesar Salad,Food,19.83,POS_Restaurant
+ITM0348,PARKING,Underground Parking (per day),Service,34.09,POS_Restaurant
+ITM0349,club sandwich,Club Sandwich,Food,36.01,POS_Bar
+ITM0350,House White,House White Wine (Glass),Beverage,87.31,POS_Spa
+ITM0351,Spagetti Bolognese,Spaghetti Bolognese,Food,30.29,PMS
+ITM0352,parking,Underground Parking (per day),Service,119.25,POS_Restaurant
+ITM0353,WHITE WINE,House White Wine (Glass),Beverage,114.91,POS_Restaurant
+ITM0354,Lattee,Latte,Beverage,27.27,Manual
+ITM0355,Swedish  60min,Swedish Massage 60min,Spa,55.26,POS_Spa
+ITM0356,Deep Tissue,Deep Tissue Massage 60min,Spa,34.46,POS_Bar
+ITM0357,fresh OJ,Fresh Orange Juice,Beverage,60.86,POS_Spa
+ITM0358,bolognese pasta,Spaghetti Bolognese,Food,126.61,PMS
+ITM0359,Deep Tissue,Deep Tissue Massage 60min,Spa,73.87,POS_Bar
+ITM0360,chocolate ck,Chocolate Cake,Food,83.2,POS_Restaurant
+ITM0361,Evian 500ml,Still Water 500ml,Beverage,143.06,PMS
+ITM0362,French Fries,French Fries,Food,33.06,POS_Bar
+ITM0363,Pepsi 50cl,Pepsi 500ml,Beverage,95.79,POS_Restaurant
+ITM0364,cappuccino,Cappuccino,Beverage,83.04,POS_Spa
+ITM0365,deep tissue 60,Deep Tissue Massage 60min,Spa,97.34,POS_Bar
+ITM0366,CC can,Coca-Cola 330ml,Beverage,93.96,POS_Spa
+ITM0367, PEPSI,Pepsi 500ml,Beverage,148.72,POS_Bar
+ITM0368,laundry,Laundry Service (per item),Service,85.1,PMS
+ITM0369,chocolate ck,Chocolate Cake,Food,113.87,POS_Spa
+ITM0370,LATTE ,Latte,Beverage,63.12,POS_Spa
+ITM0371,SPRITE 330,Sprite 330ml,Beverage,31.14,POS_Restaurant
+ITM0372,Club SW,Club Sandwich,Food,42.75,POS_Restaurant
+ITM0373,Orange J.,Fresh Orange Juice,Beverage,72.19,POS_Restaurant
+ITM0374,local beer,Local Beer Draft 500ml,Beverage,112.21,POS_Restaurant
+ITM0375,PEPSI,Pepsi 500ml,Beverage,119.61,POS_Bar
+ITM0376,car park 1d,Underground Parking (per day),Service,113.83,PMS
+ITM0377,sparkling water,Sparkling Water 500ml,Beverage,146.05,POS_Bar
+ITM0378,french fries,French Fries,Food,133.6,PMS
+ITM0379,draft beer,Local Beer Draft 500ml,Beverage,47.37,POS_Restaurant
+ITM0380,local beer,Local Beer Draft 500ml,Beverage,38.02,PMS
+ITM0381,LATTE,Latte,Beverage,68.55,POS_Spa
+ITM0382,swedish mass. 60,Swedish Massage 60min,Spa,24.0,POS_Bar
+ITM0383,dry cleaning,Dry Cleaning (per item),Service,124.75,POS_Restaurant
+ITM0384,french fries,French Fries,Food,11.09,POS_Restaurant
+ITM0385,coca-cola 330,Coca-Cola 330ml,Beverage,61.85,PMS
+ITM0386,chips,French Fries,Food,146.39,PMS
+ITM0387,club sandwich,Club Sandwich,Food,123.35,POS_Restaurant
+ITM0388,LATTE,Latte,Beverage,86.5,POS_Restaurant
+ITM0389,peps 500ml,Pepsi 500ml,Beverage,18.12,POS_Restaurant
+ITM0390,dry cleaning,Dry Cleaning (per item),Service,137.56,Manual
+ITM0391,single espresso,Espresso,Beverage,19.22,POS_Restaurant
+ITM0392,Coca Cola Can,Coca-Cola 330ml,Beverage,142.99,POS_Restaurant
+ITM0393,DT massage 60min,Deep Tissue Massage 60min,Spa,68.86,POS_Bar
+ITM0394,Spagetti Bolognese,Spaghetti Bolognese,Food,52.44,POS_Bar
+ITM0395,Caeser Salad,Caesar Salad,Food,45.46,Manual
+ITM0396,laundry svc,Laundry Service (per item),Service,19.12,PMS
+ITM0397,Dry Clean,Dry Cleaning (per item),Service,148.97,Manual
+ITM0398,Coca Cola Can,Coca-Cola 330ml,Beverage,139.43,POS_Spa
+ITM0399,Transfer Airport,Airport Transfer One Way,Service,115.72,POS_Restaurant
+ITM0400,airport transfer,Airport Transfer One Way,Service,145.68,PMS
+ITM0401,Sprit 330ml,Sprite 330ml,Beverage,76.33,POS_Spa
+ITM0402,red wine,House Red Wine (Glass),Beverage,68.92,PMS
+ITM0403,red wine,House Red Wine (Glass),Beverage,53.6,POS_Bar
+ITM0404,MARGHERITA PIZZA,Margherita Pizza,Food,118.55,POS_Restaurant
+ITM0405,fizzy water 500,Sparkling Water 500ml,Beverage,4.02,POS_Restaurant
+ITM0406,vino rosso,House Red Wine (Glass),Beverage,22.0,POS_Restaurant
+ITM0407,Ceasar Salad,Caesar Salad,Food,127.35,PMS
+ITM0408,cappucc.,Cappuccino,Beverage,116.87,POS_Bar
+ITM0409,Sprite can,Sprite 330ml,Beverage,122.05,POS_Bar
+ITM0410,FF,French Fries,Food,95.47,POS_Restaurant
+ITM0411,Beer draft,Local Beer Draft 500ml,Beverage,128.63,PMS
+ITM0412,Deep Tissue,Deep Tissue Massage 60min,Spa,10.28,POS_Bar
+ITM0413, SPRITE 330,Sprite 330ml,Beverage,135.85,POS_Bar
+ITM0414,frech fries,French Fries,Food,33.77,POS_Spa
+ITM0415,House White,House White Wine (Glass),Beverage,141.28,PMS
+ITM0416,coca-cola  330,Coca-Cola 330ml,Beverage,146.65,Manual
+ITM0417,sprite,Sprite 330ml,Beverage,85.74,POS_Restaurant
+ITM0418,facial,Facial Treatment,Spa,98.58,POS_Restaurant
+ITM0419,choc cake,Chocolate Cake,Food,32.17,Manual
+ITM0420,Chocolate Cake,Chocolate Cake,Food,3.04,PMS
+ITM0421,sprite 33cl,Sprite 330ml,Beverage,82.38,POS_Spa
+ITM0422,soda water,Sparkling Water 500ml,Beverage,117.43,PMS
+ITM0423,SPAGHETTI BOL ,Spaghetti Bolognese,Food,3.33,Manual
+ITM0424,laundry,Laundry Service (per item),Service,55.88,POS_Restaurant
+ITM0425,Schoko Kuchen,Chocolate Cake,Food,14.17,POS_Spa
+ITM0426,Spagetti Bolognese,Spaghetti Bolognese,Food,129.57,Manual
+ITM0427, spaghetti bolognaise,Spaghetti Bolognese,Food,33.25,POS_Spa
+ITM0428,COCA-COLA,Coca-Cola 330ml,Beverage,28.09,POS_Bar
+ITM0429,caesar sld,Caesar Salad,Food,77.72,PMS
+ITM0430,cappuccino,Cappuccino,Beverage,148.65,POS_Restaurant
+ITM0431,choc cake,Chocolate Cake,Food,112.66,POS_Bar
+ITM0432,Schoko Kuchen,Chocolate Cake,Food,21.76,POS_Bar
+ITM0433,spaghetti bolognaise,Spaghetti Bolognese,Food,89.96,POS_Restaurant
+ITM0434,burger,Beef Burger,Food,90.52,POS_Spa
+ITM0435,Caeser Salad,Caesar Salad,Food,35.27,Manual
+ITM0436,deep tissue 60,Deep Tissue Massage 60min,Spa,74.83,POS_Restaurant
+ITM0437,hse red wine,House Red Wine (Glass),Beverage,15.24,PMS
+ITM0438,spaghetti bolognaise,Spaghetti Bolognese,Food,96.55,POS_Restaurant
+ITM0439,SPRITE 330,Sprite 330ml,Beverage,14.8,POS_Restaurant
+ITM0440,SWEDISH MASSAGE,Swedish Massage 60min,Spa,45.61,POS_Restaurant
+ITM0441,local beer,Local Beer Draft 500ml,Beverage,90.76,POS_Spa
+ITM0442,Water,Still Water 500ml,Beverage,109.59,POS_Bar
+ITM0443,Club Sandw.,Club Sandwich,Food,128.72,Manual
+ITM0444,pizza marg.,Margherita Pizza,Food,132.57,POS_Restaurant
+ITM0445,coke can,Coca-Cola 330ml,Beverage,25.76,POS_Bar
+ITM0446,laundry per piece,Laundry Service (per item),Service,74.42,PMS
+ITM0447,face treatment,Facial Treatment,Spa,42.02,POS_Restaurant
+ITM0448,chicken brst grilled,Grilled Chicken Breast,Food,145.38,POS_Bar
+ITM0449, pepsi cola,Pepsi 500ml,Beverage,130.0,POS_Bar
+ITM0450,water 500ml,Still Water 500ml,Beverage,60.58,POS_Spa
+ITM0451,club sandwich,Club Sandwich,Food,15.86,POS_Restaurant
+ITM0452,grld chicken,Grilled Chicken Breast,Food,71.91,POS_Restaurant
+ITM0453, BEER,Local Beer Draft 500ml,Beverage,100.0,PMS
+ITM0454,Sparkling 500ml,Sparkling Water 500ml,Beverage,46.28,POS_Bar
+ITM0455,bier 500,Local Beer Draft 500ml,Beverage,95.13,POS_Bar
+ITM0456,Srpite,Sprite 330ml,Beverage,93.99,POS_Restaurant
+ITM0457,pepsi cola,Pepsi 500ml,Beverage,42.09,POS_Restaurant
+ITM0458,spag bol,Spaghetti Bolognese,Food,60.65,POS_Restaurant
+ITM0459,dry cleaning,Dry Cleaning (per item),Service,29.62,POS_Spa
+ITM0460,capuccino,Cappuccino,Beverage,74.39,PMS
+ITM0461,RED WINE,House Red Wine (Glass),Beverage,91.45,POS_Bar
+ITM0462,Srpite,Sprite 330ml,Beverage,10.99,PMS
+ITM0463,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,54.38,Manual
+ITM0464,chicken brst grilled,Grilled Chicken Breast,Food,83.08,Manual
+ITM0465,caesar sld,Caesar Salad,Food,132.87,PMS
+ITM0466,cafe espresso,Espresso,Beverage,46.13,PMS
+ITM0467,FF,French Fries,Food,5.66,POS_Bar
+ITM0468,lndry service,Laundry Service (per item),Service,134.46,POS_Bar
+ITM0469,Facial Treatment,Facial Treatment,Spa,35.32,POS_Restaurant
+ITM0470,lndry service,Laundry Service (per item),Service,97.16,POS_Restaurant
+ITM0471,fresh OJ,Fresh Orange Juice,Beverage,96.51,POS_Restaurant
+ITM0472,Deep Tissue,Deep Tissue Massage 60min,Spa,128.74,PMS
+ITM0473,OJ,Fresh Orange Juice,Beverage,29.18,POS_Restaurant
+ITM0474,BEER,Local Beer Draft 500ml,Beverage,40.21,POS_Restaurant
+ITM0475,aqua 500,Still Water 500ml,Beverage,33.08,Manual
+ITM0476,choc cake,Chocolate Cake,Food,138.94,POS_Restaurant
+ITM0477,beef brgr,Beef Burger,Food,130.16,POS_Bar
+ITM0478,OJ,Fresh Orange Juice,Beverage,132.78,POS_Restaurant
+ITM0479,massage swedish 60,Swedish Massage 60min,Spa,30.77,PMS
+ITM0480,Chocolate Cake,Chocolate Cake,Food,130.03,POS_Bar
+ITM0481,caffe latte,Latte,Beverage,10.39,PMS
+ITM0482,French Fries,French Fries,Food,57.32,PMS
+ITM0483,Parking 1 day,Underground Parking (per day),Service,75.37,POS_Restaurant
+ITM0484,FRIES,French Fries,Food,62.05,POS_Bar
+ITM0485,frsh orange juice,Fresh Orange Juice,Beverage,27.04,POS_Restaurant
+ITM0486,red wine,House Red Wine (Glass),Beverage,122.14,POS_Restaurant
+ITM0487,CAPPUCCINO,Cappuccino,Beverage,122.2,PMS
+ITM0488,facial,Facial Treatment,Spa,7.77,POS_Restaurant
+ITM0489,fizzy water 500,Sparkling Water 500ml,Beverage,105.51,POS_Restaurant
+ITM0490,Facial Treatment,Facial Treatment,Spa,61.84,POS_Spa
+ITM0491,Evian 500ml,Still Water 500ml,Beverage,19.78,POS_Restaurant
+ITM0492,wine red,House Red Wine (Glass),Beverage,92.89,POS_Restaurant
+ITM0493,margherita,Margherita Pizza,Food,28.4,POS_Bar
+ITM0494,cafe espresso ,Espresso,Beverage,37.73,POS_Restaurant
+ITM0495,cafe cappuccino,Cappuccino,Beverage,66.64,POS_Restaurant
+ITM0496,SPAGHETTI BOL,Spaghetti Bolognese,Food,92.02,POS_Spa
+ITM0497, chicken brst grilled,Grilled Chicken Breast,Food,86.54,Manual
+ITM0498,SWEDISH MASSAGE,Swedish Massage 60min,Spa,119.6,POS_Restaurant
+ITM0499,dry cleaning 1pc,Dry Cleaning (per item),Service,124.21,POS_Bar
+ITM0500, car park 1d,Underground Parking (per day),Service,118.96,PMS
+ITM0501,FACIAL,Facial Treatment,Spa,68.23,POS_Restaurant
+ITM0502,pommes frites,French Fries,Food,92.25,POS_Restaurant
+ITM0503,Beer draft ,Local Beer Draft 500ml,Beverage,85.12,Manual
+ITM0504, Srpite,Sprite 330ml,Beverage,55.89,POS_Restaurant
+ITM0505,Pepsi 50cl,Pepsi 500ml,Beverage,63.36,PMS
+ITM0506,Sparkling 500ml,Sparkling Water 500ml,Beverage,60.76,PMS
+ITM0507,FACIAL,Facial Treatment,Spa,47.01,PMS
+ITM0508,facial treatmnt,Facial Treatment,Spa,44.81,PMS
+ITM0509,club sandwhich,Club Sandwich,Food,143.33,Manual
+ITM0510,House Red,House Red Wine (Glass),Beverage,50.57,POS_Bar
+ITM0511,House White,House White Wine (Glass),Beverage,102.63,Manual
+ITM0512,grld chicken,Grilled Chicken Breast,Food,60.35,PMS
+ITM0513,Coka Cola,Coca-Cola 330ml,Beverage,124.8,POS_Spa
+ITM0514,spaghetti bolognaise,Spaghetti Bolognese,Food,60.02,POS_Restaurant
+ITM0515,CAPPUCCINO,Cappuccino,Beverage,43.52,PMS
+ITM0516,club sandwich,Club Sandwich,Food,57.41,PMS
+ITM0517,pizza marg.,Margherita Pizza,Food,51.97,POS_Spa
+ITM0518,vino bianco,House White Wine (Glass),Beverage,28.27,POS_Bar
+ITM0519,underground parking ,Underground Parking (per day),Service,34.91,PMS
+ITM0520,Swdsh Massage 1hr,Swedish Massage 60min,Spa,41.08,PMS
+ITM0521,WATER 500,Still Water 500ml,Beverage,9.84,POS_Restaurant
+ITM0522,capuccino,Cappuccino,Beverage,91.9,POS_Restaurant
+ITM0523,AIRPORT TRANSFER,Airport Transfer One Way,Service,116.2,POS_Restaurant
+ITM0524,chocolate ck,Chocolate Cake,Food,67.93,POS_Bar
+ITM0525,Sparkling 500ml,Sparkling Water 500ml,Beverage,131.33,POS_Spa
+ITM0526, WHITE WINE,House White Wine (Glass),Beverage,72.01,PMS
+ITM0527,MARGHERITA PIZZA,Margherita Pizza,Food,100.69,PMS
+ITM0528,dry cleaning 1pc,Dry Cleaning (per item),Service,41.09,Manual
+ITM0529,Dry Clean,Dry Cleaning (per item),Service,130.0,POS_Bar
+ITM0530,SPRITE 330,Sprite 330ml,Beverage,26.49,POS_Bar
+ITM0531, Srpite,Sprite 330ml,Beverage,59.24,POS_Bar
+ITM0532,Coca Cola 33cl,Coca-Cola 330ml,Beverage,138.4,POS_Spa
+ITM0533,soda water,Sparkling Water 500ml,Beverage,71.43,POS_Bar
+ITM0534,facial treatmnt,Facial Treatment,Spa,83.9,POS_Bar
+ITM0535,wash  +  iron,Laundry Service (per item),Service,39.58,POS_Restaurant
+ITM0536,caesar  salad,Caesar Salad,Food,99.5,PMS
+ITM0537,Facial Treatment,Facial Treatment,Spa,5.33,POS_Restaurant
+ITM0538,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,76.53,POS_Bar
+ITM0539,sprite 33cl,Sprite 330ml,Beverage,107.23,POS_Restaurant
+ITM0540,car park 1d,Underground Parking (per day),Service,29.0,PMS
+ITM0541,Cafe Latte,Latte,Beverage,4.64,POS_Restaurant
+ITM0542,caesar sld ,Caesar Salad,Food,143.91,POS_Spa
+ITM0543,glass of red wine,House Red Wine (Glass),Beverage,114.37,POS_Bar
+ITM0544,Srpite,Sprite 330ml,Beverage,96.41,POS_Restaurant
+ITM0545,ESPRESSO,Espresso,Beverage,20.98,POS_Restaurant
+ITM0546,lndry service,Laundry Service (per item),Service,66.27,POS_Restaurant
+ITM0547,cafe latte,Latte,Beverage,35.46,POS_Bar
+ITM0548,dry cleaning,Dry Cleaning (per item),Service,127.45,POS_Bar
+ITM0549,glass of red wine,House Red Wine (Glass),Beverage,18.4,PMS
+ITM0550,prkg daily,Underground Parking (per day),Service,97.27,POS_Spa
+ITM0551,hse red wine,House Red Wine (Glass),Beverage,22.99,POS_Restaurant
+ITM0552,transfer to airport ,Airport Transfer One Way,Service,19.71,POS_Bar
+ITM0553,cafe cappuccino,Cappuccino,Beverage,90.21,POS_Restaurant
+ITM0554,wash + iron,Laundry Service (per item),Service,31.79,PMS
+ITM0555,Swdsh Massage 1hr,Swedish Massage 60min,Spa,97.79,POS_Restaurant
+ITM0556,Spag. Bolognese,Spaghetti Bolognese,Food,74.67,PMS
+ITM0557,facial treatmnt,Facial Treatment,Spa,44.58,POS_Restaurant
+ITM0558,wine red,House Red Wine (Glass),Beverage,25.56,POS_Spa
+ITM0559,Sparkling 500ml,Sparkling Water 500ml,Beverage,52.55,POS_Restaurant
+ITM0560,water 500ml,Still Water 500ml,Beverage,73.45,Manual
+ITM0561,Beer draft,Local Beer Draft 500ml,Beverage,62.11,POS_Restaurant
+ITM0562,Chocolate Cake,Chocolate Cake,Food,54.81,PMS
+ITM0563,airprt transfer 1way,Airport Transfer One Way,Service,99.71,POS_Bar
+ITM0564,GRILLED CHICKEN,Grilled Chicken Breast,Food,43.99,POS_Bar
+ITM0565,dry cleaning 1pc,Dry Cleaning (per item),Service,75.07,POS_Spa
+ITM0566,Parking p/day,Underground Parking (per day),Service,40.17,POS_Restaurant
+ITM0567,CHOC CAKE,Chocolate Cake,Food,93.56,Manual
+ITM0568,pommes frites,French Fries,Food,7.09,PMS
+ITM0569,massage swedish 60,Swedish Massage 60min,Spa,64.05,POS_Restaurant
+ITM0570,skin  facial,Facial Treatment,Spa,69.03,POS_Spa
+ITM0571,parking,Underground Parking (per day),Service,49.63,POS_Restaurant
+ITM0572,beer 500ml,Local Beer Draft 500ml,Beverage,91.93,POS_Bar
+ITM0573,vino rosso,House Red Wine (Glass),Beverage,25.39,POS_Bar
+ITM0574,dry cln,Dry Cleaning (per item),Service,62.08,PMS
+ITM0575, laundry,Laundry Service (per item),Service,8.56,PMS
+ITM0576, Sprite can,Sprite 330ml,Beverage,140.35,POS_Bar
+ITM0577,glass of red wine,House Red Wine (Glass),Beverage,138.76,POS_Restaurant
+ITM0578,fries,French Fries,Food,34.45,POS_Bar
+ITM0579,fresh OJ,Fresh Orange Juice,Beverage,21.03,POS_Restaurant
+ITM0580,1x espresso,Espresso,Beverage,38.7,Manual
+ITM0581,Sprit 330ml,Sprite 330ml,Beverage,59.3,POS_Restaurant
+ITM0582, choco cake,Chocolate Cake,Food,149.72,POS_Bar
+ITM0583,parking,Underground Parking (per day),Service,21.64,PMS
+ITM0584,face treatment,Facial Treatment,Spa,41.5,POS_Spa
+ITM0585,chips,French Fries,Food,133.59,POS_Restaurant
+ITM0586,CAESAR SALAD,Caesar Salad,Food,139.38,POS_Bar
+ITM0587,choco cake,Chocolate Cake,Food,74.66,POS_Bar
+ITM0588,laundry svc ,Laundry Service (per item),Service,125.42,POS_Bar
+ITM0589,laundry,Laundry Service (per item),Service,121.94,POS_Bar
+ITM0590,sprite,Sprite 330ml,Beverage,111.97,PMS
+ITM0591,Coke 330ml,Coca-Cola 330ml,Beverage,118.5,PMS
+ITM0592,CLUB SANDWICH,Club Sandwich,Food,77.37,PMS
+ITM0593,skin facial,Facial Treatment,Spa,68.62,POS_Spa
+ITM0594,choc cake,Chocolate Cake,Food,101.17,Manual
+ITM0595,Club  Sandw.,Club Sandwich,Food,66.91,Manual
+ITM0596,caffe latte,Latte,Beverage,25.61,PMS
+ITM0597,SPRITE  330,Sprite 330ml,Beverage,72.12,POS_Bar
+ITM0598,cesar salad,Caesar Salad,Food,43.06,POS_Spa
+ITM0599,sprite 33cl,Sprite 330ml,Beverage,142.57,POS_Restaurant
+ITM0600,Club Sandw. ,Club Sandwich,Food,55.53,POS_Bar
+ITM0601,Chocolate Cake,Chocolate Cake,Food,5.5,PMS
+ITM0602,House White,House White Wine (Glass),Beverage,28.94,PMS
+ITM0603,AIRPORT TRANSFER,Airport Transfer One Way,Service,127.57,POS_Restaurant
+ITM0604,Water,Still Water 500ml,Beverage,10.22,POS_Bar
+ITM0605,club sandwich,Club Sandwich,Food,141.17,POS_Restaurant
+ITM0606,laundry svc,Laundry Service (per item),Service,37.36,Manual
+ITM0607,dry cleaning 1pc ,Dry Cleaning (per item),Service,149.65,POS_Restaurant
+ITM0608,Margherita Pzza,Margherita Pizza,Food,133.68,POS_Bar
+ITM0609,Margarita Pizza,Margherita Pizza,Food,94.59,POS_Restaurant
+ITM0610,aqua 500,Still Water 500ml,Beverage,15.34,POS_Restaurant
+ITM0611,cafe cappuccino,Cappuccino,Beverage,2.16,POS_Restaurant
+ITM0612,caesar sld,Caesar Salad,Food,103.92,POS_Restaurant
+ITM0613,cafe  espresso,Espresso,Beverage,131.89,POS_Restaurant
+ITM0614,wine white,House White Wine (Glass),Beverage,18.92,POS_Spa
+ITM0615,laundry,Laundry Service (per item),Service,95.2,Manual
+ITM0616,Lattee,Latte,Beverage,125.76,POS_Restaurant
+ITM0617,capuccino,Cappuccino,Beverage,131.79,PMS
+ITM0618,SPRITE 330,Sprite 330ml,Beverage,15.24,PMS
+ITM0619,hamburger,Beef Burger,Food,86.54,POS_Restaurant
+ITM0620,club sandwhich,Club Sandwich,Food,51.55,POS_Bar
+ITM0621,beer 500ml,Local Beer Draft 500ml,Beverage,109.3,PMS
+ITM0622,margherita,Margherita Pizza,Food,116.89,POS_Restaurant
+ITM0623, wine white,House White Wine (Glass),Beverage,9.16,POS_Spa
+ITM0624,WATER 500,Still Water 500ml,Beverage,82.96,PMS
+ITM0625,PARKING,Underground Parking (per day),Service,118.4,POS_Restaurant
+ITM0626,Coke 330ml,Coca-Cola 330ml,Beverage,18.15,Manual
+ITM0627,AIRPORT TRANSFER,Airport Transfer One Way,Service,98.52,POS_Spa
+ITM0628,San Pellegrino 500ml,Still Water 500ml,Beverage,30.17,POS_Bar
+ITM0629,House White,House White Wine (Glass),Beverage,83.45,POS_Bar
+ITM0630,airprt transfer 1way,Airport Transfer One Way,Service,56.17,Manual
+ITM0631, DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,87.64,POS_Restaurant
+ITM0632,caesar sld,Caesar Salad,Food,142.12,PMS
+ITM0633,glass of red wine,House Red Wine (Glass),Beverage,12.52,POS_Spa
+ITM0634,CC can,Coca-Cola 330ml,Beverage,116.79,POS_Bar
+ITM0635,DRY CLEANING,Dry Cleaning (per item),Service,100.45,POS_Restaurant
+ITM0636,Margherita Pzza,Margherita Pizza,Food,34.08,POS_Bar
+ITM0637,glass of red wine,House Red Wine (Glass),Beverage,47.24,PMS
+ITM0638,cafe cappuccino,Cappuccino,Beverage,76.58,POS_Restaurant
+ITM0639,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,25.65,Manual
+ITM0640,PARKING,Underground Parking (per day),Service,4.0,POS_Restaurant
+ITM0641,Srpite,Sprite 330ml,Beverage,93.53,POS_Restaurant
+ITM0642,CAESAR SALAD,Caesar Salad,Food,111.65,POS_Restaurant
+ITM0643,Coke 330ml,Coca-Cola 330ml,Beverage,54.48,POS_Restaurant
+ITM0644,beer 500ml,Local Beer Draft 500ml,Beverage,116.41,PMS
+ITM0645,Chicken Breast,Grilled Chicken Breast,Food,2.77,POS_Bar
+ITM0646,dry cln,Dry Cleaning (per item),Service,79.0,POS_Restaurant
+ITM0647,deep tissue mass.,Deep Tissue Massage 60min,Spa,33.28,POS_Spa
+ITM0648,PARKING,Underground Parking (per day),Service,11.45,POS_Restaurant
+ITM0649,fresh OJ,Fresh Orange Juice,Beverage,101.86,POS_Restaurant
+ITM0650,Orange J.,Fresh Orange Juice,Beverage,28.2,POS_Bar
+ITM0651,grld chicken,Grilled Chicken Breast,Food,112.09,POS_Restaurant
+ITM0652,swedish mass. 60,Swedish Massage 60min,Spa,34.86,POS_Restaurant
+ITM0653, Lattee,Latte,Beverage,46.24,PMS
+ITM0654,skin facial,Facial Treatment,Spa,37.04,POS_Bar
+ITM0655,LATTE,Latte,Beverage,21.64,POS_Spa
+ITM0656,clb sandwich,Club Sandwich,Food,56.29,PMS
+ITM0657,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,82.53,POS_Bar
+ITM0658,Deep Tissue,Deep Tissue Massage 60min,Spa,82.42,Manual
+ITM0659,AIRPORT TRANSFER,Airport Transfer One Way,Service,81.9,POS_Bar
+ITM0660,fizzy water 500,Sparkling Water 500ml,Beverage,27.7,POS_Restaurant
+ITM0661,beef hamburger,Beef Burger,Food,38.66,PMS
+ITM0662,Facial Treatment ,Facial Treatment,Spa,118.12,POS_Restaurant
+ITM0663,LAUNDRY,Laundry Service (per item),Service,141.32,Manual
+ITM0664,FF,French Fries,Food,40.63,POS_Restaurant
+ITM0665,Caeser Salad,Caesar Salad,Food,133.96,POS_Spa
+ITM0666, Dry Clean,Dry Cleaning (per item),Service,11.54,PMS
+ITM0667,FACIAL,Facial Treatment,Spa,61.07,POS_Restaurant
+ITM0668,Cafe Latte,Latte,Beverage,55.7,POS_Bar
+ITM0669,red wine,House Red Wine (Glass),Beverage,107.56,POS_Restaurant
+ITM0670,FACIAL,Facial Treatment,Spa,101.1,PMS
+ITM0671,Caeser Salad,Caesar Salad,Food,72.89,PMS
+ITM0672,cafe latte,Latte,Beverage,55.62,Manual
+ITM0673,bier 500,Local Beer Draft 500ml,Beverage,63.19,POS_Bar
+ITM0674,local beer,Local Beer Draft 500ml,Beverage,24.91,POS_Spa
+ITM0675,WATER 500,Still Water 500ml,Beverage,117.17,Manual
+ITM0676,parking ,Underground Parking (per day),Service,40.4,POS_Bar
+ITM0677,Srpite ,Sprite 330ml,Beverage,121.27,PMS
+ITM0678,Sprit 330ml,Sprite 330ml,Beverage,88.15,POS_Bar
+ITM0679,laundry svc,Laundry Service (per item),Service,30.94,POS_Bar
+ITM0680,esprso,Espresso,Beverage,138.65,POS_Restaurant
+ITM0681,water 500ml,Still Water 500ml,Beverage,94.29,POS_Spa
+ITM0682,cafe cappuccino,Cappuccino,Beverage,122.63,POS_Bar
+ITM0683,DRY CLEANING,Dry Cleaning (per item),Service,75.23,PMS
+ITM0684,coca cola,Coca-Cola 330ml,Beverage,123.82,Manual
+ITM0685, draught beer,Local Beer Draft 500ml,Beverage,48.89,POS_Spa
+ITM0686,laundry,Laundry Service (per item),Service,5.98,Manual
+ITM0687,spag bol,Spaghetti Bolognese,Food,112.54,POS_Spa
+ITM0688,airport transfer,Airport Transfer One Way,Service,26.96,POS_Spa
+ITM0689,SPAGHETTI BOL,Spaghetti Bolognese,Food,26.37,POS_Restaurant
+ITM0690,soda water,Sparkling Water 500ml,Beverage,49.29,POS_Restaurant
+ITM0691,WATER 500,Still Water 500ml,Beverage,111.21,POS_Restaurant
+ITM0692,spag bol,Spaghetti Bolognese,Food,67.74,PMS
+ITM0693,Lattee,Latte,Beverage,80.04,POS_Bar
+ITM0694,latte,Latte,Beverage,9.62,POS_Bar
+ITM0695, WHITE WINE,House White Wine (Glass),Beverage,14.77,PMS
+ITM0696,Sparkling 500ml,Sparkling Water 500ml,Beverage,114.37,POS_Bar
+ITM0697,drft beer,Local Beer Draft 500ml,Beverage,103.49,POS_Restaurant
+ITM0698,white wine,House White Wine (Glass),Beverage,116.32,POS_Bar
+ITM0699,facial,Facial Treatment,Spa,44.56,PMS
+ITM0700,Pepsi 50cl,Pepsi 500ml,Beverage,29.98,POS_Restaurant
+ITM0701,glass of white wine,House White Wine (Glass),Beverage,125.54,POS_Restaurant
+ITM0702,Coke 330ml,Coca-Cola 330ml,Beverage,90.19,PMS
+ITM0703,Swdsh Massage 1hr,Swedish Massage 60min,Spa,82.23,POS_Restaurant
+ITM0704,sparkling water,Sparkling Water 500ml,Beverage,132.45,POS_Restaurant
+ITM0705,Swedish 60min,Swedish Massage 60min,Spa,139.35,PMS
+ITM0706,chocolate ck,Chocolate Cake,Food,89.92,Manual
+ITM0707,SPARKLING,Sparkling Water 500ml,Beverage,126.25,PMS
+ITM0708,massage swedish 60,Swedish Massage 60min,Spa,114.41,POS_Restaurant
+ITM0709,red wine,House Red Wine (Glass),Beverage,72.95,POS_Bar
+ITM0710,still water,Still Water 500ml,Beverage,139.33,PMS
+ITM0711,Swdsh Massage 1hr,Swedish Massage 60min,Spa,79.1,POS_Restaurant
+ITM0712,parking,Underground Parking (per day),Service,145.19,PMS
+ITM0713,transfer to airport,Airport Transfer One Way,Service,69.49,POS_Restaurant
+ITM0714,Lattee ,Latte,Beverage,125.84,POS_Bar
+ITM0715,glass of red wine,House Red Wine (Glass),Beverage,89.14,POS_Restaurant
+ITM0716,beer 500ml,Local Beer Draft 500ml,Beverage,19.8,POS_Spa
+ITM0717,wash + iron,Laundry Service (per item),Service,147.51,PMS
+ITM0718,draft beer,Local Beer Draft 500ml,Beverage,61.1,POS_Bar
+ITM0719,grld chicken,Grilled Chicken Breast,Food,43.65,POS_Spa
+ITM0720,massage swedish 60,Swedish Massage 60min,Spa,3.5,POS_Spa
+ITM0721,MARGHERITA PIZZA,Margherita Pizza,Food,78.41,POS_Restaurant
+ITM0722,SPAGHETTI BOL,Spaghetti Bolognese,Food,58.14,PMS
+ITM0723,PEPSI,Pepsi 500ml,Beverage,29.35,POS_Restaurant
+ITM0724,CC can,Coca-Cola 330ml,Beverage,34.01,Manual
+ITM0725,CC can,Coca-Cola 330ml,Beverage,79.14,POS_Bar
+ITM0726,red wine,House Red Wine (Glass),Beverage,39.95,POS_Restaurant
+ITM0727,CHOC CAKE,Chocolate Cake,Food,52.83,PMS
+ITM0728,choc cake,Chocolate Cake,Food,50.09,PMS
+ITM0729,Orng juice,Fresh Orange Juice,Beverage,111.98,POS_Restaurant
+ITM0730, glass of red wine,House Red Wine (Glass),Beverage,149.21,POS_Restaurant
+ITM0731,facial,Facial Treatment,Spa,28.89,POS_Restaurant
+ITM0732,cap.,Cappuccino,Beverage,42.52,POS_Restaurant
+ITM0733,choco cake,Chocolate Cake,Food,25.05,PMS
+ITM0734,cap. ,Cappuccino,Beverage,26.96,PMS
+ITM0735,caffe latte,Latte,Beverage,75.88,POS_Restaurant
+ITM0736,Club SW,Club Sandwich,Food,80.97,Manual
+ITM0737, mineral water,Still Water 500ml,Beverage,86.77,Manual
+ITM0738,caesar salad,Caesar Salad,Food,49.01,PMS
+ITM0739,prkg daily,Underground Parking (per day),Service,39.84,PMS
+ITM0740,OJ,Fresh Orange Juice,Beverage,33.95,POS_Bar
+ITM0741,Coke 330ml,Coca-Cola 330ml,Beverage,65.69,Manual
+ITM0742,wine white,House White Wine (Glass),Beverage,136.69,POS_Restaurant
+ITM0743,FACIAL,Facial Treatment,Spa,9.25,POS_Restaurant
+ITM0744,caffe latte,Latte,Beverage,95.43,POS_Spa
+ITM0745,laundry svc,Laundry Service (per item),Service,122.88,POS_Spa
+ITM0746, sparkling water,Sparkling Water 500ml,Beverage,100.96,POS_Bar
+ITM0747, Diet Coke 330ml,Coca-Cola 330ml,Beverage,47.05,Manual
+ITM0748,FACIAL,Facial Treatment,Spa,140.36,POS_Spa
+ITM0749,caesar sld,Caesar Salad,Food,148.11,POS_Bar
+ITM0750,cheese burger,Beef Burger,Food,100.77,PMS
+ITM0751,sprite 33cl,Sprite 330ml,Beverage,138.94,POS_Restaurant
+ITM0752,hse white wine,House White Wine (Glass),Beverage,132.17,POS_Restaurant
+ITM0753,Beer  draft,Local Beer Draft 500ml,Beverage,98.94,Manual
+ITM0754,fresh OJ,Fresh Orange Juice,Beverage,13.13,PMS
+ITM0755,red wine,House Red Wine (Glass),Beverage,139.83,PMS
+ITM0756,coca cola,Coca-Cola 330ml,Beverage,111.41,POS_Spa
+ITM0757,red wine,House Red Wine (Glass),Beverage,109.39,POS_Restaurant
+ITM0758,face  treatment,Facial Treatment,Spa,20.84,POS_Restaurant
+ITM0759,facial,Facial Treatment,Spa,33.9,POS_Bar
+ITM0760, esprso,Espresso,Beverage,90.99,POS_Restaurant
+ITM0761,Spag. Bolognese,Spaghetti Bolognese,Food,129.96,POS_Restaurant
+ITM0762,Diet Coke 330ml,Coca-Cola 330ml,Beverage,41.39,POS_Bar
+ITM0763,Pepsii 500ml,Pepsi 500ml,Beverage,78.92,POS_Bar
+ITM0764,RED WINE,House Red Wine (Glass),Beverage,19.63,Manual
+ITM0765,Laundry 1 item,Laundry Service (per item),Service,24.74,POS_Restaurant
+ITM0766, airport transfer,Airport Transfer One Way,Service,17.3,PMS
+ITM0767,Pepsi 50cl,Pepsi 500ml,Beverage,78.56,PMS
+ITM0768,SPAGHETTI BOL,Spaghetti Bolognese,Food,135.39,Manual
+ITM0769,Cafe  Latte,Latte,Beverage,49.87,POS_Bar
+ITM0770,Laundry 1 item,Laundry Service (per item),Service,80.93,POS_Spa
+ITM0771,transfer to airport,Airport Transfer One Way,Service,84.45,POS_Spa
+ITM0772,ESPRESSO,Espresso,Beverage,115.01,POS_Restaurant
+ITM0773,Orange J.,Fresh Orange Juice,Beverage,73.0,POS_Restaurant
+ITM0774,beef hamburger,Beef Burger,Food,4.67,POS_Restaurant
+ITM0775,mineral water,Still Water 500ml,Beverage,49.8,Manual
+ITM0776,Beef Burger,Beef Burger,Food,119.0,POS_Bar
+ITM0777,cappuccino,Cappuccino,Beverage,147.09,PMS
+ITM0778,mineral water,Still Water 500ml,Beverage,63.2,POS_Spa
+ITM0779,cafe latte,Latte,Beverage,6.4,PMS
+ITM0780,airprt transfer 1way,Airport Transfer One Way,Service,72.29,Manual
+ITM0781,Chocolate Cake,Chocolate Cake,Food,114.23,POS_Bar
+ITM0782,Pizza Margherita,Margherita Pizza,Food,138.44,PMS
+ITM0783,MARGHERITA PIZZA,Margherita Pizza,Food,102.26,POS_Bar
+ITM0784,FACIAL,Facial Treatment,Spa,148.66,POS_Bar
+ITM0785,MARGHERITA PIZZA,Margherita Pizza,Food,127.43,POS_Spa
+ITM0786,Laundry 1 item,Laundry Service (per item),Service,128.0,POS_Bar
+ITM0787,spag bol,Spaghetti Bolognese,Food,110.5,PMS
+ITM0788,caffe latte,Latte,Beverage,78.96,POS_Bar
+ITM0789,cafe espresso,Espresso,Beverage,2.71,POS_Restaurant
+ITM0790,grilled  chicken,Grilled Chicken Breast,Food,88.97,PMS
+ITM0791,Coka Cola,Coca-Cola 330ml,Beverage,149.92,POS_Restaurant
+ITM0792,cappuccino,Cappuccino,Beverage,97.16,PMS
+ITM0793,prkg daily,Underground Parking (per day),Service,143.14,POS_Bar
+ITM0794,pepsi cola ,Pepsi 500ml,Beverage,99.57,POS_Restaurant
+ITM0795,Swedish 60min,Swedish Massage 60min,Spa,64.05,POS_Restaurant
+ITM0796,Club Sandw.,Club Sandwich,Food,3.56,PMS
+ITM0797,Sprit 330ml,Sprite 330ml,Beverage,115.26,POS_Bar
+ITM0798,CHOC CAKE,Chocolate Cake,Food,41.2,POS_Restaurant
+ITM0799,grld chicken,Grilled Chicken Breast,Food,64.37,Manual
+ITM0800,underground  parking,Underground Parking (per day),Service,105.07,POS_Restaurant
+ITM0801,swedish massage,Swedish Massage 60min,Spa,47.8,PMS
+ITM0802,Caeser Salad,Caesar Salad,Food,131.26,POS_Restaurant
+ITM0803, draft beer,Local Beer Draft 500ml,Beverage,22.23,POS_Restaurant
+ITM0804,draft beer,Local Beer Draft 500ml,Beverage,146.24,POS_Bar
+ITM0805,still water,Still Water 500ml,Beverage,76.27,PMS
+ITM0806,Pizza Margherita,Margherita Pizza,Food,131.17,POS_Restaurant
+ITM0807,fizzy water 500,Sparkling Water 500ml,Beverage,54.76,Manual
+ITM0808,SPRITE 330,Sprite 330ml,Beverage,83.71,POS_Bar
+ITM0809,Schoko Kuchen,Chocolate Cake,Food,68.69,POS_Restaurant
+ITM0810,beef brgr,Beef Burger,Food,120.12,POS_Bar
+ITM0811,vino rosso ,House Red Wine (Glass),Beverage,104.46,PMS
+ITM0812,CLUB SANDWICH,Club Sandwich,Food,93.48,POS_Restaurant
+ITM0813,Expresso,Espresso,Beverage,66.86,POS_Spa
+ITM0814,dry cleaning 1pc,Dry Cleaning (per item),Service,97.79,PMS
+ITM0815,Chocolate Cake,Chocolate Cake,Food,39.94,PMS
+ITM0816, sprkl water,Sparkling Water 500ml,Beverage,3.66,PMS
+ITM0817,wine red,House Red Wine (Glass),Beverage,59.64,POS_Restaurant
+ITM0818, pepsi 500,Pepsi 500ml,Beverage,92.16,POS_Bar
+ITM0819, wine white,House White Wine (Glass),Beverage,114.93,POS_Restaurant
+ITM0820,grld chicken,Grilled Chicken Breast,Food,39.82,POS_Restaurant
+ITM0821,beef brgr,Beef Burger,Food,146.63,PMS
+ITM0822,glass of red wine ,House Red Wine (Glass),Beverage,117.26,POS_Restaurant
+ITM0823,choc cake,Chocolate Cake,Food,68.57,POS_Bar
+ITM0824,bolognese pasta,Spaghetti Bolognese,Food,130.86,POS_Bar
+ITM0825,choc cake,Chocolate Cake,Food,21.82,POS_Spa
+ITM0826,face treatment,Facial Treatment,Spa,89.33,POS_Spa
+ITM0827,cheese burger,Beef Burger,Food,124.97,POS_Spa
+ITM0828,cafe cappuccino,Cappuccino,Beverage,19.97,POS_Restaurant
+ITM0829,DT massage 60min,Deep Tissue Massage 60min,Spa,111.87,PMS
+ITM0830,French Fries,French Fries,Food,38.13,Manual
+ITM0831,vino bianco,House White Wine (Glass),Beverage,113.66,POS_Bar
+ITM0832,Club Sandw.,Club Sandwich,Food,94.55,POS_Bar
+ITM0833,BURGER,Beef Burger,Food,51.02,POS_Restaurant
+ITM0834,glass of red wine,House Red Wine (Glass),Beverage,18.48,POS_Restaurant
+ITM0835,PARKING,Underground Parking (per day),Service,93.84,POS_Bar
+ITM0836,pollo alla griglia,Grilled Chicken Breast,Food,118.32,POS_Restaurant
+ITM0837,H2O 500ml,Still Water 500ml,Beverage,21.14,PMS
+ITM0838,ESPRESSO,Espresso,Beverage,105.94,Manual
+ITM0839,Swedish 60min ,Swedish Massage 60min,Spa,25.56,POS_Spa
+ITM0840,sprite 33cl,Sprite 330ml,Beverage,98.05,POS_Spa
+ITM0841,laundry svc,Laundry Service (per item),Service,128.6,POS_Spa
+ITM0842,chicken brst grilled,Grilled Chicken Breast,Food,25.56,PMS
+ITM0843,chicken brst grilled,Grilled Chicken Breast,Food,8.39,POS_Bar
+ITM0844,sparkling water,Sparkling Water 500ml,Beverage,85.82,PMS
+ITM0845,LATTE,Latte,Beverage,115.64,POS_Restaurant
+ITM0846,red wine,House Red Wine (Glass),Beverage,111.87,PMS
+ITM0847,caesar salad,Caesar Salad,Food,66.06,POS_Restaurant
+ITM0848,Margherita Pzza,Margherita Pizza,Food,99.23,Manual
+ITM0849,wash + iron,Laundry Service (per item),Service,36.15,POS_Bar
+ITM0850,1x espresso,Espresso,Beverage,16.37,POS_Bar
+ITM0851,club sandwich,Club Sandwich,Food,107.18,PMS
+ITM0852,H2O 500ml,Still Water 500ml,Beverage,76.04,POS_Restaurant
+ITM0853,PARKING,Underground Parking (per day),Service,105.29,PMS
+ITM0854,DT massage 60min,Deep Tissue Massage 60min,Spa,144.56,POS_Restaurant
+ITM0855,burger,Beef Burger,Food,9.99,POS_Spa
+ITM0856,esprso,Espresso,Beverage,118.09,POS_Spa
+ITM0857,Chicken Breast,Grilled Chicken Breast,Food,14.12,POS_Restaurant
+ITM0858,SPRITE 330 ,Sprite 330ml,Beverage,11.48,POS_Spa
+ITM0859,sprite,Sprite 330ml,Beverage,77.64,Manual
+ITM0860,coca-cola 330,Coca-Cola 330ml,Beverage,4.08,POS_Restaurant
+ITM0861,Sprite can,Sprite 330ml,Beverage,113.08,Manual
+ITM0862,GRILLED CHICKEN,Grilled Chicken Breast,Food,149.15,POS_Bar
+ITM0863,Coka Cola ,Coca-Cola 330ml,Beverage,75.46,POS_Restaurant
+ITM0864,french fries,French Fries,Food,24.78,PMS
+ITM0865,Caeser Salad,Caesar Salad,Food,34.43,Manual
+ITM0866,choc cake,Chocolate Cake,Food,143.14,PMS
+ITM0867,bolognese pasta,Spaghetti Bolognese,Food,45.24,POS_Spa
+ITM0868,Spag. Bolognese,Spaghetti Bolognese,Food,126.96,POS_Bar
+ITM0869,white  wine,House White Wine (Glass),Beverage,25.63,PMS
+ITM0870,cap.,Cappuccino,Beverage,25.78,Manual
+ITM0871, cappuccino,Cappuccino,Beverage,137.19,PMS
+ITM0872,Pepsii 500ml,Pepsi 500ml,Beverage,50.78,POS_Bar
+ITM0873,spaghetti bolognaise,Spaghetti Bolognese,Food,149.55,POS_Bar
+ITM0874,Coca Cola Can ,Coca-Cola 330ml,Beverage,121.76,PMS
+ITM0875,Cafe Latte ,Latte,Beverage,9.23,PMS
+ITM0876,caffe latte,Latte,Beverage,110.41,POS_Bar
+ITM0877,cap.,Cappuccino,Beverage,43.2,POS_Bar
+ITM0878,Parking 1 day,Underground Parking (per day),Service,20.02,Manual
+ITM0879,spaghetti bolognaise,Spaghetti Bolognese,Food,58.22,POS_Restaurant
+ITM0880,red wine glass,House Red Wine (Glass),Beverage,116.24,PMS
+ITM0881,FACIAL,Facial Treatment,Spa,80.89,Manual
+ITM0882,cafe latte,Latte,Beverage,58.07,POS_Spa
+ITM0883,H2O 500ml,Still Water 500ml,Beverage,30.77,POS_Restaurant
+ITM0884,FF,French Fries,Food,120.02,POS_Bar
+ITM0885,Cafe Latte,Latte,Beverage,147.62,POS_Restaurant
+ITM0886,spag bol,Spaghetti Bolognese,Food,20.61,POS_Restaurant
+ITM0887,underground parking ,Underground Parking (per day),Service,65.05,PMS
+ITM0888,DT massage 60min,Deep Tissue Massage 60min,Spa,146.13,POS_Restaurant
+ITM0889, Club SW,Club Sandwich,Food,16.47,POS_Restaurant
+ITM0890,laundry  svc,Laundry Service (per item),Service,82.03,POS_Bar
+ITM0891,Transfer Airport,Airport Transfer One Way,Service,64.93,PMS
+ITM0892,spaghetti bolognaise ,Spaghetti Bolognese,Food,114.48,POS_Bar
+ITM0893,laundry svc,Laundry Service (per item),Service,64.68,PMS
+ITM0894,Club SW,Club Sandwich,Food,129.56,POS_Spa
+ITM0895,Swedish 60min,Swedish Massage 60min,Spa,80.02,POS_Restaurant
+ITM0896,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,25.74,POS_Bar
+ITM0897,Pepsi Cola 500,Pepsi 500ml,Beverage,32.21,POS_Spa
+ITM0898,PEPSI,Pepsi 500ml,Beverage,64.3,POS_Bar
+ITM0899,fizzy  water  500,Sparkling Water 500ml,Beverage,3.0,POS_Restaurant
+ITM0900,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,17.52,PMS
+ITM0901,Beef Burger,Beef Burger,Food,112.05,PMS
+ITM0902,Parking p/day,Underground Parking (per day),Service,43.83,PMS
+ITM0903,swedish mass. 60,Swedish Massage 60min,Spa,126.64,POS_Restaurant
+ITM0904,Beer draft,Local Beer Draft 500ml,Beverage,68.73,PMS
+ITM0905,Sparkling 500ml,Sparkling Water 500ml,Beverage,140.59,POS_Restaurant
+ITM0906,sprite,Sprite 330ml,Beverage,43.45,POS_Restaurant
+ITM0907,Pepsi Cola 500,Pepsi 500ml,Beverage,36.64,POS_Restaurant
+ITM0908,BEER,Local Beer Draft 500ml,Beverage,11.82,PMS
+ITM0909,esprso,Espresso,Beverage,55.05,POS_Restaurant
+ITM0910,FRIES,French Fries,Food,13.2,POS_Spa
+ITM0911,spag bol,Spaghetti Bolognese,Food,140.5,POS_Bar
+ITM0912,capuccino,Cappuccino,Beverage,8.08,POS_Spa
+ITM0913,spaghetti bolognaise ,Spaghetti Bolognese,Food,109.42,POS_Restaurant
+ITM0914,Caeser Salad,Caesar Salad,Food,69.05,Manual
+ITM0915,Laundry 1 item,Laundry Service (per item),Service,122.46,PMS
+ITM0916,FRIES,French Fries,Food,61.75,POS_Spa
+ITM0917,CAPPUCCINO,Cappuccino,Beverage,131.03,PMS
+ITM0918,laundry svc,Laundry Service (per item),Service,73.93,POS_Bar
+ITM0919,Lattee,Latte,Beverage,54.79,POS_Bar
+ITM0920,cappucc.,Cappuccino,Beverage,37.72,POS_Bar
+ITM0921,white wine,House White Wine (Glass),Beverage,17.27,POS_Bar
+ITM0922,beef hamburger,Beef Burger,Food,76.98,PMS
+ITM0923,Spagetti Bolognese,Spaghetti Bolognese,Food,44.47,POS_Bar
+ITM0924,sprite,Sprite 330ml,Beverage,18.28,PMS
+ITM0925,white wine glass,House White Wine (Glass),Beverage,29.27,POS_Restaurant
+ITM0926,Spagetti Bolognese,Spaghetti Bolognese,Food,32.38,POS_Spa
+ITM0927,Beer draft,Local Beer Draft 500ml,Beverage,61.21,POS_Spa
+ITM0928,COCA-COLA,Coca-Cola 330ml,Beverage,19.32,POS_Restaurant
+ITM0929,club sandwhich,Club Sandwich,Food,41.5,POS_Restaurant
+ITM0930,coke,Coca-Cola 330ml,Beverage,72.25,POS_Restaurant
+ITM0931,swedish mass. 60,Swedish Massage 60min,Spa,72.06,PMS
+ITM0932,Dry Clean,Dry Cleaning (per item),Service,124.1,POS_Restaurant
+ITM0933,massage swedish 60,Swedish Massage 60min,Spa,119.02,POS_Restaurant
+ITM0934,Deep Tissue,Deep Tissue Massage 60min,Spa,51.01,POS_Bar
+ITM0935,CAESAR SALAD,Caesar Salad,Food,125.67,PMS
+ITM0936,CAESAR SALAD,Caesar Salad,Food,65.72,PMS
+ITM0937,caesar salad,Caesar Salad,Food,145.68,POS_Restaurant
+ITM0938,cappucc.,Cappuccino,Beverage,44.03,PMS
+ITM0939,soda water,Sparkling Water 500ml,Beverage,96.49,POS_Restaurant
+ITM0940,House Red,House Red Wine (Glass),Beverage,114.77,POS_Bar
+ITM0941,beef hamburger,Beef Burger,Food,146.45,Manual
+ITM0942,Orange J.,Fresh Orange Juice,Beverage,137.73,PMS
+ITM0943,Swedish 60min,Swedish Massage 60min,Spa,3.96,POS_Bar
+ITM0944,cheese burger,Beef Burger,Food,149.9,POS_Restaurant
+ITM0945,single espresso,Espresso,Beverage,12.82,Manual
+ITM0946,Parking p/day,Underground Parking (per day),Service,58.94,POS_Bar
+ITM0947,sparkling water,Sparkling Water 500ml,Beverage,58.23,POS_Spa
+ITM0948,Sprit 330ml,Sprite 330ml,Beverage,5.26,PMS
+ITM0949,CLUB SANDWICH ,Club Sandwich,Food,145.64,POS_Restaurant
+ITM0950,OJ,Fresh Orange Juice,Beverage,144.01,POS_Spa
+ITM0951,FACIAL,Facial Treatment,Spa,97.07,PMS
+ITM0952,spaghetti bolognaise,Spaghetti Bolognese,Food,131.59,POS_Bar
+ITM0953,COCA-COLA,Coca-Cola 330ml,Beverage,11.81,POS_Restaurant
+ITM0954,espresso,Espresso,Beverage,42.51,PMS
+ITM0955,cesar salad,Caesar Salad,Food,43.76,PMS
+ITM0956,white wine,House White Wine (Glass),Beverage,124.04,POS_Spa
+ITM0957,Pepsi 50cl,Pepsi 500ml,Beverage,32.11,PMS
+ITM0958,sprkl water,Sparkling Water 500ml,Beverage,12.1,POS_Restaurant
+ITM0959,CAPPUCCINO,Cappuccino,Beverage,28.84,POS_Bar
+ITM0960,espresso,Espresso,Beverage,116.2,POS_Bar
+ITM0961,lndry service,Laundry Service (per item),Service,42.84,POS_Spa
+ITM0962,spaghetti bolognaise,Spaghetti Bolognese,Food,77.61,POS_Restaurant
+ITM0963,FRIES,French Fries,Food,84.65,Manual
+ITM0964,facial,Facial Treatment,Spa,49.58,PMS
+ITM0965,beef brgr,Beef Burger,Food,146.43,PMS
+ITM0966,airport trnsf,Airport Transfer One Way,Service,39.69,POS_Restaurant
+ITM0967,chocolate ck,Chocolate Cake,Food,38.77,POS_Restaurant
+ITM0968, Swedish 60min,Swedish Massage 60min,Spa,118.49,POS_Restaurant
+ITM0969, white wine glass,House White Wine (Glass),Beverage,108.59,PMS
+ITM0970,Schoko Kuchen,Chocolate Cake,Food,135.4,PMS
+ITM0971,massage swedish 60,Swedish Massage 60min,Spa,16.0,POS_Restaurant
+ITM0972,drft beer,Local Beer Draft 500ml,Beverage,70.62,POS_Spa
+ITM0973,Swdsh Massage 1hr,Swedish Massage 60min,Spa,44.75,PMS
+ITM0974,SPARKLING,Sparkling Water 500ml,Beverage,34.14,POS_Spa
+ITM0975,Sprit 330ml,Sprite 330ml,Beverage,5.54,POS_Restaurant
+ITM0976,COCA-COLA,Coca-Cola 330ml,Beverage,54.17,POS_Spa
+ITM0977,wine red,House Red Wine (Glass),Beverage,27.19,POS_Bar
+ITM0978,Coca Cola Can,Coca-Cola 330ml,Beverage,120.43,PMS
+ITM0979,frsh orange juice,Fresh Orange Juice,Beverage,84.91,POS_Spa
+ITM0980,Margarita Pizza,Margherita Pizza,Food,112.71,POS_Restaurant
+ITM0981,Ceasar Salad,Caesar Salad,Food,45.09,PMS
+ITM0982,Srpite,Sprite 330ml,Beverage,111.98,Manual
+ITM0983,caesar salad,Caesar Salad,Food,75.16,PMS
+ITM0984,Club SW,Club Sandwich,Food,27.81,POS_Bar
+ITM0985,wash + iron,Laundry Service (per item),Service,13.05,PMS
+ITM0986,underground parking,Underground Parking (per day),Service,30.67,PMS
+ITM0987,ORANGE JUICE,Fresh Orange Juice,Beverage,27.92,PMS
+ITM0988, Club SW,Club Sandwich,Food,130.86,PMS
+ITM0989,mineral water,Still Water 500ml,Beverage,135.96,POS_Spa
+ITM0990,San Pellegrino 500ml,Still Water 500ml,Beverage,22.85,POS_Spa
+ITM0991,Laundry 1 item,Laundry Service (per item),Service,126.07,POS_Bar
+ITM0992,laundry ,Laundry Service (per item),Service,105.14,POS_Bar
+ITM0993,LAUNDRY,Laundry Service (per item),Service,147.45,POS_Bar
+ITM0994,hse red wine,House Red Wine (Glass),Beverage,100.51,POS_Restaurant
+ITM0995,Cafe Latte,Latte,Beverage,126.36,POS_Spa
+ITM0996,French Fries,French Fries,Food,116.67,POS_Restaurant
+ITM0997,Sparkling 500ml,Sparkling Water 500ml,Beverage,120.08,POS_Bar
+ITM0998,dry cln,Dry Cleaning (per item),Service,145.76,PMS
+ITM0999, caffe latte,Latte,Beverage,4.11,PMS
+ITM1000,latte,Latte,Beverage,112.13,PMS
+ITM1001,SWEDISH MASSAGE,Swedish Massage 60min,Spa,149.01,POS_Spa
+ITM1002,caesar salad,Caesar Salad,Food,11.12,Manual
+ITM1003,bolognese pasta,Spaghetti Bolognese,Food,95.91,POS_Restaurant
+ITM1004,cafe latte,Latte,Beverage,13.54,Manual
+ITM1005,wine white,House White Wine (Glass),Beverage,144.65,POS_Spa
+ITM1006,hse red wine,House Red Wine (Glass),Beverage,73.62,PMS
+ITM1007,peps 500ml,Pepsi 500ml,Beverage,61.51,PMS
+ITM1008,orange juice,Fresh Orange Juice,Beverage,21.83,PMS
+ITM1009,House Red,House Red Wine (Glass),Beverage,13.92,PMS
+ITM1010,cesar salad,Caesar Salad,Food,89.33,PMS
+ITM1011,latte,Latte,Beverage,66.64,POS_Restaurant
+ITM1012,Deep Tissue,Deep Tissue Massage 60min,Spa,89.14,PMS
+ITM1013,lndry service ,Laundry Service (per item),Service,61.78,POS_Restaurant
+ITM1014,pollo alla griglia,Grilled Chicken Breast,Food,36.67,PMS
+ITM1015,parking,Underground Parking (per day),Service,21.66,POS_Restaurant
+ITM1016,SPAGHETTI BOL,Spaghetti Bolognese,Food,143.83,POS_Restaurant
+ITM1017,laundry per piece,Laundry Service (per item),Service,95.31,PMS
+ITM1018,House White,House White Wine (Glass),Beverage,36.74,PMS
+ITM1019,Water,Still Water 500ml,Beverage,111.92,POS_Spa
+ITM1020,capuccino,Cappuccino,Beverage,78.21,POS_Spa
+ITM1021,Cafe Latte,Latte,Beverage,16.78,POS_Spa
+ITM1022,facial,Facial Treatment,Spa,50.84,POS_Restaurant
+ITM1023,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,43.67,PMS
+ITM1024,San Pellegrino 500ml,Still Water 500ml,Beverage,15.16,POS_Bar
+ITM1025,Cappucino,Cappuccino,Beverage,37.54,POS_Restaurant
+ITM1026,Swdsh Massage 1hr,Swedish Massage 60min,Spa,148.25,Manual
+ITM1027,Parking p/day,Underground Parking (per day),Service,49.39,POS_Spa
+ITM1028,airport trnsf,Airport Transfer One Way,Service,130.48,POS_Restaurant
+ITM1029,Cappucino,Cappuccino,Beverage,138.81,PMS
+ITM1030,white wine,House White Wine (Glass),Beverage,55.96,PMS
+ITM1031,Lattee,Latte,Beverage,24.8,POS_Restaurant
+ITM1032,Parking 1 day,Underground Parking (per day),Service,104.07,PMS
+ITM1033, Coca Cola Can,Coca-Cola 330ml,Beverage,69.47,POS_Restaurant
+ITM1034,choc cake,Chocolate Cake,Food,91.94,POS_Restaurant
+ITM1035,Pepsi Cola 500,Pepsi 500ml,Beverage,91.55,POS_Bar
+ITM1036,Pepsi 50cl,Pepsi 500ml,Beverage,17.72,Manual
+ITM1037,Parking p/day,Underground Parking (per day),Service,25.63,POS_Spa
+ITM1038,Expresso,Espresso,Beverage,16.08,POS_Spa
+ITM1039,ESPRESSO,Espresso,Beverage,65.43,POS_Restaurant
+ITM1040,Water,Still Water 500ml,Beverage,40.26,POS_Bar
+ITM1041,Srpite,Sprite 330ml,Beverage,126.05,POS_Bar
+ITM1042,SPAGHETTI BOL,Spaghetti Bolognese,Food,64.83,POS_Bar
+ITM1043,transfer  to  airport,Airport Transfer One Way,Service,58.8,Manual
+ITM1044,Ceasar Salad,Caesar Salad,Food,10.86,POS_Spa
+ITM1045,Ceasar Salad,Caesar Salad,Food,126.74,PMS
+ITM1046,Ceasar Salad,Caesar Salad,Food,60.31,POS_Spa
+ITM1047,Swdsh Massage 1hr,Swedish Massage 60min,Spa,7.9,PMS
+ITM1048,vino bianco,House White Wine (Glass),Beverage,108.81,POS_Restaurant
+ITM1049,french  fries,French Fries,Food,48.72,POS_Restaurant
+ITM1050,beef brgr,Beef Burger,Food,65.46,Manual
+ITM1051,Pizza Margherita,Margherita Pizza,Food,91.81,POS_Restaurant
+ITM1052,cappuccino,Cappuccino,Beverage,110.65,Manual
+ITM1053,GRILLED CHICKEN ,Grilled Chicken Breast,Food,77.99,POS_Bar
+ITM1054,espresso,Espresso,Beverage,96.35,POS_Bar
+ITM1055,Beer draft,Local Beer Draft 500ml,Beverage,60.4,POS_Restaurant
+ITM1056,LATTE,Latte,Beverage,16.09,POS_Bar
+ITM1057,cafe cappuccino,Cappuccino,Beverage,62.53,POS_Restaurant
+ITM1058,SPAGHETTI BOL,Spaghetti Bolognese,Food,44.89,POS_Restaurant
+ITM1059,Spag.  Bolognese,Spaghetti Bolognese,Food,59.26,PMS
+ITM1060,Chicken Breast,Grilled Chicken Breast,Food,20.48,POS_Restaurant
+ITM1061,local beer,Local Beer Draft 500ml,Beverage,70.49,POS_Restaurant
+ITM1062,BURGER,Beef Burger,Food,32.37,PMS
+ITM1063,SPARKLING,Sparkling Water 500ml,Beverage,29.55,Manual
+ITM1064,espresso,Espresso,Beverage,105.0,PMS
+ITM1065,parking,Underground Parking (per day),Service,16.07,POS_Restaurant
+ITM1066,facial,Facial Treatment,Spa,97.34,POS_Spa
+ITM1067,wine red,House Red Wine (Glass),Beverage,30.08,Manual
+ITM1068,sprkl water ,Sparkling Water 500ml,Beverage,101.41,POS_Restaurant
+ITM1069,Chicken Breast,Grilled Chicken Breast,Food,5.93,POS_Restaurant
+ITM1070,LAUNDRY,Laundry Service (per item),Service,77.63,POS_Spa
+ITM1071,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,14.19,PMS
+ITM1072,Diet Coke 330ml,Coca-Cola 330ml,Beverage,32.74,POS_Restaurant
+ITM1073,capuccino,Cappuccino,Beverage,29.72,POS_Spa
+ITM1074, parking,Underground Parking (per day),Service,138.12,PMS
+ITM1075,water 500ml,Still Water 500ml,Beverage,88.64,POS_Restaurant
+ITM1076,FACIAL,Facial Treatment,Spa,20.04,POS_Spa
+ITM1077,dry cleaning 1pc,Dry Cleaning (per item),Service,147.62,POS_Bar
+ITM1078,PARKING,Underground Parking (per day),Service,110.75,POS_Bar
+ITM1079, massage swedish 60,Swedish Massage 60min,Spa,70.55,PMS
+ITM1080,Margarita Pizza,Margherita Pizza,Food,142.63,PMS
+ITM1081,frsh orange juice,Fresh Orange Juice,Beverage,42.96,PMS
+ITM1082,FACIAL,Facial Treatment,Spa,127.34,Manual
+ITM1083,Swedish 60min,Swedish Massage 60min,Spa,51.47,PMS
+ITM1084,pepsi cola,Pepsi 500ml,Beverage,145.3,POS_Restaurant
+ITM1085,Margherita Pzza,Margherita Pizza,Food,128.52,POS_Bar
+ITM1086,Pepsii 500ml,Pepsi 500ml,Beverage,91.88,POS_Bar
+ITM1087, grilled chicken,Grilled Chicken Breast,Food,23.77,POS_Bar
+ITM1088,Water,Still Water 500ml,Beverage,70.12,Manual
+ITM1089,draught beer,Local Beer Draft 500ml,Beverage,105.71,POS_Spa
+ITM1090,SPAGHETTI BOL,Spaghetti Bolognese,Food,36.66,POS_Bar
+ITM1091,CLUB SANDWICH,Club Sandwich,Food,15.74,PMS
+ITM1092,GRILLED CHICKEN,Grilled Chicken Breast,Food,76.47,Manual
+ITM1093,Beef Burger ,Beef Burger,Food,66.71,POS_Bar
+ITM1094,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,80.3,PMS
+ITM1095,latte,Latte,Beverage,128.2,POS_Restaurant
+ITM1096,FRIES,French Fries,Food,13.63,POS_Spa
+ITM1097,House Red,House Red Wine (Glass),Beverage,5.72,POS_Restaurant
+ITM1098,Deep  Tissue,Deep Tissue Massage 60min,Spa,56.63,POS_Bar
+ITM1099,airprt transfer 1way,Airport Transfer One Way,Service,118.83,POS_Restaurant
+ITM1100,french fries ,French Fries,Food,75.97,POS_Bar
+ITM1101,latte,Latte,Beverage,30.02,PMS
+ITM1102,fresh OJ,Fresh Orange Juice,Beverage,72.46,POS_Bar
+ITM1103,LAUNDRY,Laundry Service (per item),Service,74.09,POS_Restaurant
+ITM1104,Lattee,Latte,Beverage,22.5,POS_Bar
+ITM1105,caesar salad,Caesar Salad,Food,10.27,POS_Restaurant
+ITM1106,Lattee,Latte,Beverage,109.77,PMS
+ITM1107,swedish mass. 60,Swedish Massage 60min,Spa,40.3,POS_Bar
+ITM1108,Diet Coke 330ml,Coca-Cola 330ml,Beverage,140.83,POS_Bar
+ITM1109,sprkl water,Sparkling Water 500ml,Beverage,86.4,Manual
+ITM1110,coca-cola 330,Coca-Cola 330ml,Beverage,2.58,PMS
+ITM1111,skin facial,Facial Treatment,Spa,31.88,POS_Restaurant
+ITM1112,Transfer Airport,Airport Transfer One Way,Service,145.18,PMS
+ITM1113,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,63.02,PMS
+ITM1114,LATTE,Latte,Beverage,143.59,POS_Restaurant
+ITM1115,Orange  J.,Fresh Orange Juice,Beverage,19.21,POS_Restaurant
+ITM1116,H2O 500ml,Still Water 500ml,Beverage,51.53,POS_Spa
+ITM1117,club sandwhich,Club Sandwich,Food,100.37,POS_Restaurant
+ITM1118,Margherita Pzza ,Margherita Pizza,Food,103.18,PMS
+ITM1119,frsh orange juice,Fresh Orange Juice,Beverage,75.6,POS_Bar
+ITM1120,draft beer,Local Beer Draft 500ml,Beverage,49.71,POS_Spa
+ITM1121,facial treatmnt,Facial Treatment,Spa,74.1,POS_Bar
+ITM1122,Transfer Airport,Airport Transfer One Way,Service,72.94,Manual
+ITM1123,wash + iron,Laundry Service (per item),Service,127.71,POS_Bar
+ITM1124,lndry service,Laundry Service (per item),Service,130.54,POS_Restaurant
+ITM1125,beef brgr,Beef Burger,Food,123.88,Manual
+ITM1126,deep tissue mass.,Deep Tissue Massage 60min,Spa,46.84,POS_Restaurant
+ITM1127,cafe latte,Latte,Beverage,89.63,PMS
+ITM1128,pollo alla griglia,Grilled Chicken Breast,Food,75.44,POS_Restaurant
+ITM1129,DRY CLEANING,Dry Cleaning (per item),Service,130.92,POS_Restaurant
+ITM1130,WATER 500 ,Still Water 500ml,Beverage,78.06,POS_Restaurant
+ITM1131,Schoko Kuchen,Chocolate Cake,Food,58.14,POS_Spa
+ITM1132,fizzy water 500,Sparkling Water 500ml,Beverage,125.49,PMS
+ITM1133,cesar salad,Caesar Salad,Food,75.26,POS_Spa
+ITM1134,Beef Burger,Beef Burger,Food,44.51,PMS
+ITM1135, Expresso,Espresso,Beverage,135.66,POS_Restaurant
+ITM1136,coca cola,Coca-Cola 330ml,Beverage,123.62,POS_Spa
+ITM1137,AIRPORT TRANSFER,Airport Transfer One Way,Service,48.77,POS_Bar
+ITM1138,draught  beer,Local Beer Draft 500ml,Beverage,122.11,PMS
+ITM1139,LATTE ,Latte,Beverage,131.77,POS_Restaurant
+ITM1140,espresso,Espresso,Beverage,78.66,POS_Restaurant
+ITM1141,Cafe  Latte,Latte,Beverage,3.48,POS_Spa
+ITM1142,Dry Clean,Dry Cleaning (per item),Service,71.23,POS_Bar
+ITM1143,MARGHERITA PIZZA,Margherita Pizza,Food,131.45,PMS
+ITM1144,Facial Treatment,Facial Treatment,Spa,118.71,POS_Bar
+ITM1145,DT massage 60min,Deep Tissue Massage 60min,Spa,64.73,POS_Restaurant
+ITM1146,Parking 1 day,Underground Parking (per day),Service,107.5,Manual
+ITM1147,DEEP TISSUE MASSAGE,Deep Tissue Massage 60min,Spa,110.43,POS_Bar
+ITM1148,Orange J.,Fresh Orange Juice,Beverage,126.61,POS_Spa
+ITM1149,burger,Beef Burger,Food,42.92,Manual
+ITM1150,glass of white wine,House White Wine (Glass),Beverage,27.31,Manual
+ITM1151,WATER 500,Still Water 500ml,Beverage,51.99,POS_Restaurant
+ITM1152,laundry svc,Laundry Service (per item),Service,38.94,POS_Spa
+ITM1153,DT massage 60min,Deep Tissue Massage 60min,Spa,13.89,POS_Spa
+ITM1154,coca cola,Coca-Cola 330ml,Beverage,25.78,POS_Restaurant
+ITM1155,RED WINE,House Red Wine (Glass),Beverage,136.64,PMS
+ITM1156,Srpite,Sprite 330ml,Beverage,81.44,POS_Bar
+ITM1157,Srpite,Sprite 330ml,Beverage,90.58,POS_Restaurant
+ITM1158,glass of red wine,House Red Wine (Glass),Beverage,23.02,POS_Restaurant
+ITM1159,red wine,House Red Wine (Glass),Beverage,7.25,Manual
+ITM1160,massage swedish 60,Swedish Massage 60min,Spa,129.03,POS_Spa
+ITM1161,Transfer Airport,Airport Transfer One Way,Service,35.03,POS_Spa
+ITM1162,laundry,Laundry Service (per item),Service,76.01,POS_Restaurant
+ITM1163,bolognese pasta,Spaghetti Bolognese,Food,107.19,POS_Restaurant
+ITM1164,Dry Clean,Dry Cleaning (per item),Service,136.74,PMS
+ITM1165,Pizza Margherita,Margherita Pizza,Food,44.93,POS_Restaurant
+ITM1166,Transfer Airport,Airport Transfer One Way,Service,27.14,POS_Restaurant
+ITM1167,Coca Cola 33cl,Coca-Cola 330ml,Beverage,111.95,PMS
+ITM1168, glass of white wine,House White Wine (Glass),Beverage,78.08,POS_Restaurant
+ITM1169,OJ,Fresh Orange Juice,Beverage,51.14,Manual
+ITM1170,cap.,Cappuccino,Beverage,76.77,POS_Restaurant
+ITM1171,ESPRESSO,Espresso,Beverage,112.33,POS_Restaurant
+ITM1172,Sprit 330ml,Sprite 330ml,Beverage,19.3,POS_Spa
+ITM1173,Spag. Bolognese,Spaghetti Bolognese,Food,38.83,POS_Spa
+ITM1174,capuccino,Cappuccino,Beverage,121.23,POS_Spa
+ITM1175,airprt transfer 1way,Airport Transfer One Way,Service,129.91,PMS
+ITM1176,Swedish 60min,Swedish Massage 60min,Spa,141.21,POS_Spa
+ITM1177,hse  red  wine,House Red Wine (Glass),Beverage,63.49,POS_Bar
+ITM1178,chemical cleaning,Dry Cleaning (per item),Service,58.08,POS_Restaurant
+ITM1179,Spag. Bolognese,Spaghetti Bolognese,Food,98.54,POS_Restaurant
+ITM1180,CAESAR SALAD,Caesar Salad,Food,111.17,POS_Spa
+ITM1181,glass of white wine,House White Wine (Glass),Beverage,16.6,PMS
+ITM1182,skin facial,Facial Treatment,Spa,91.53,POS_Spa
+ITM1183, dry cln,Dry Cleaning (per item),Service,73.99,POS_Bar
+ITM1184,CHOC CAKE,Chocolate Cake,Food,49.47,POS_Bar
+ITM1185,swedish mass. 60,Swedish Massage 60min,Spa,27.98,PMS
+ITM1186,SPAGHETTI BOL,Spaghetti Bolognese,Food,12.59,Manual
+ITM1187,water 500ml,Still Water 500ml,Beverage,127.82,POS_Bar
+ITM1188,water 500ml,Still Water 500ml,Beverage,12.5,POS_Restaurant
+ITM1189,french fries,French Fries,Food,140.25,POS_Restaurant
+ITM1190,CHOC CAKE,Chocolate Cake,Food,28.19,POS_Restaurant
+ITM1191,clb sandwich,Club Sandwich,Food,38.69,POS_Restaurant
+ITM1192,Srpite,Sprite 330ml,Beverage,127.21,POS_Restaurant
+ITM1193,swedish mass. 60,Swedish Massage 60min,Spa,102.99,POS_Spa
+ITM1194,cafe latte,Latte,Beverage,83.15,POS_Spa
+ITM1195,WATER 500,Still Water 500ml,Beverage,133.85,POS_Spa
+ITM1196,fries,French Fries,Food,15.49,POS_Bar
+ITM1197,SPRITE 330,Sprite 330ml,Beverage,64.22,POS_Bar
+ITM1198,dry cleaning 1pc,Dry Cleaning (per item),Service,29.63,POS_Spa
+ITM1199,sprite 33cl,Sprite 330ml,Beverage,36.97,POS_Bar
+ITM1200,Schoko Kuchen,Chocolate Cake,Food,69.97,POS_Restaurant
