@@ -79,7 +79,40 @@ A comprehensive AI/ML platform designed for hotel chains, covering the full data
 
 ## Streamlit Dashboard
 
-Premium dark-themed dashboard with **Strawberry-inspired** color palette and **multi-language support** (EN/TR/DE).
+Premium dark-themed dashboard with **Strawberry-inspired** color palette and **multi-language support** (EN/TR/DE/NO).
+
+### Home — Platform Overview
+
+KPI cards, 4 module navigation, tech stack pills, and architecture diagram.
+
+![Home](docs/screenshots/home.png)
+
+### Cancellation Predictor — 5 ML Models + Live Prediction
+
+Model comparison table, SHAP feature importance, interactive prediction form with risk gauge, and revenue impact analysis.
+
+![Cancellation Predictor](docs/screenshots/cancellation_predictor.png)
+
+### Customer Intelligence — RFM, CLTV, Clustering
+
+RFM segmentation with 6 customer segments, BG-NBD + Gamma-Gamma CLTV modeling, and K-Means behavioral clustering with radar charts.
+
+![Customer Intelligence](docs/screenshots/customer_intelligence.png)
+
+### Analytics Chatbot — Natural Language to SQL
+
+Ask questions in plain English, get SQL-backed answers with auto-generated visualizations and business insights. Powered by Groq LLaMA 3.3 70B on 119K+ real records.
+
+![Analytics Chatbot](docs/screenshots/analytics_chatbot.png)
+
+### MLOps Monitor — Drift Detection and Alerting
+
+Real-time health score, PSI-based data drift analysis, model performance tracking, and threshold-based alert system with 7 configurable rules.
+
+![MLOps Monitor](docs/screenshots/mlops_monitor.png)
+
+<details>
+<summary><b>All Dashboard Pages</b></summary>
 
 | Page | Description |
 |------|-------------|
@@ -91,6 +124,8 @@ Premium dark-themed dashboard with **Strawberry-inspired** color palette and **m
 | **Review Analyzer** | Sentiment distribution, aspect radar chart, hotel filters |
 | **Analytics Chatbot** | Split layout (chat + visualization), Groq LLM integration |
 | **MLOps Monitor** | Health score, PSI drift charts, performance tracking, alert dashboard |
+
+</details>
 
 ---
 
