@@ -85,8 +85,6 @@ if master_path.exists():
                 layer_data[layer_data["Items Matched"] > 0],
                 x="Items Matched", y="Layer",
                 title="Pipeline Funnel: Items Matched per Layer",
-                color="Accuracy",
-                color_continuous_scale=["#1E2130", COLORS["primary"]],
             )
             fig.update_layout(height=400)
             apply_plotly_theme(fig)
