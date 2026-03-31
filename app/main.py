@@ -65,13 +65,13 @@ st.markdown(f"""
 st.markdown("")
 k1, k2, k3, k4 = st.columns(4)
 with k1:
-    st.metric(t("total_bookings", lang), "119,390", "+12.4%")
+    st.metric(t("total_bookings", lang), "119,390")
 with k2:
-    st.metric(t("cancel_rate", lang), "37.04%", "-2.1%")
+    st.metric(t("cancel_rate", lang), "37.04%")
 with k3:
-    st.metric(t("total_customers", lang), "12,000", "+8.5%")
+    st.metric(t("total_customers", lang), "12,000")
 with k4:
-    st.metric(t("best_auc", lang), "0.9467", "+0.03")
+    st.metric(t("best_auc", lang), "0.9465")
 
 st.markdown("")
 
@@ -79,46 +79,40 @@ st.markdown("")
 st.markdown(f"### {t('explore_modules', lang)}")
 st.markdown("")
 
+modules = [
+    ("📊", 'mod1_title', 'mod1_desc', "1_📊_Cancellation_Predictor"),
+    ("📄", 'mod2_title', 'mod2_desc', "3_📄_Invoice_Classifier"),
+    ("💬", 'mod3_title', 'mod3_desc', "6_💬_Analytics_Chatbot"),
+    ("📈", 'mod4_title', 'mod4_desc', "7_📈_MLOps_Monitor"),
+]
+
 m1, m2 = st.columns(2)
-
-with m1:
-    st.markdown(f"""
-    <div class="module-card">
-        <div class="module-icon">📊</div>
-        <h3>{t('mod1_title', lang)}</h3>
-        <p>{t('mod1_desc', lang)}</p>
-    </div>
-    """, unsafe_allow_html=True)
-
-with m2:
-    st.markdown(f"""
-    <div class="module-card">
-        <div class="module-icon">📄</div>
-        <h3>{t('mod2_title', lang)}</h3>
-        <p>{t('mod2_desc', lang)}</p>
-    </div>
-    """, unsafe_allow_html=True)
+for i, (col, (icon, title_key, desc_key, page)) in enumerate(zip([m1, m2, None, None], modules)):
+    if i < 2:
+        with col:
+            st.markdown(f"""
+            <div class="module-card">
+                <div class="module-icon">{icon}</div>
+                <h3>{t(title_key, lang)}</h3>
+                <p>{t(desc_key, lang)}</p>
+            </div>
+            """, unsafe_allow_html=True)
+            if st.button("Explore →", key=f"btn_{i}", use_container_width=True):
+                st.switch_page(f"pages/{page}.py")
 
 st.markdown("")
 m3, m4 = st.columns(2)
-
-with m3:
-    st.markdown(f"""
-    <div class="module-card">
-        <div class="module-icon">💬</div>
-        <h3>{t('mod3_title', lang)}</h3>
-        <p>{t('mod3_desc', lang)}</p>
-    </div>
-    """, unsafe_allow_html=True)
-
-with m4:
-    st.markdown(f"""
-    <div class="module-card">
-        <div class="module-icon">📈</div>
-        <h3>{t('mod4_title', lang)}</h3>
-        <p>{t('mod4_desc', lang)}</p>
-    </div>
-    """, unsafe_allow_html=True)
+for i, (col, (icon, title_key, desc_key, page)) in enumerate(zip([m3, m4], modules[2:]), start=2):
+    with col:
+        st.markdown(f"""
+        <div class="module-card">
+            <div class="module-icon">{icon}</div>
+            <h3>{t(title_key, lang)}</h3>
+            <p>{t(desc_key, lang)}</p>
+        </div>
+        """, unsafe_allow_html=True)
+        if st.button("Explore →", key=f"btn_{i}", use_container_width=True):
+            st.switch_page(f"pages/{page}.py")
 
 # ─────────────── Tech Stack ───────────────
 st.markdown("")
@@ -140,33 +134,46 @@ st.markdown(
 st.markdown("")
 st.markdown(f"### {t('architecture', lang)}")
 
-st.markdown(f"""
-<div class="premium-card">
-    <div style="text-align: center; font-family: monospace; font-size: 0.9rem; color: {COLORS['text_secondary']};">
-        <pre style="color: {COLORS['text_secondary']}; background: transparent;">
-┌─────────────────────────────────────────────────────────────┐
-│                  HOTEL INTELLIGENCE PLATFORM                 │
-├──────────────┬──────────────┬──────────────┬────────────────┤
-│  Module 1    │  Module 2    │  Module 3    │  Module 4      │
-│  Predictive  │  LLM &       │  Conversa-   │  MLOps &       │
-│  Analytics   │  Unstructured│  tional AI   │  Monitoring    │
-│              │  Data        │              │                │
-│ ◆ Cancel     │ ◆ Invoice    │ ◆ NL-to-SQL  │ ◆ MLflow       │
-│   Prediction │   Classify   │ ◆ Intent     │ ◆ Drift        │
-│ ◆ CLTV       │ ◆ Item       │   Detection  │   Detection    │
-│ ◆ RFM        │   Cleanup    │ ◆ Insight    │ ◆ Alert        │
-│ ◆ Clustering │ ◆ Sentiment  │   Generation │   System       │
-│ ◆ SHAP       │   Analysis   │ ◆ Auto Chart │ ◆ Model        │
-│              │              │              │   Registry     │
-├──────────────┴──────────────┴──────────────┴────────────────┤
-│  Data Layer: SQLite │ Synthetic + Kaggle │ 119K+ Records    │
-├─────────────────────┴────────────────────┴──────────────────┤
-│  Infrastructure: Docker │ GitHub Actions CI │ MLflow Server  │
-└─────────────────────────────────────────────────────────────┘
-        </pre>
+arch_modules = [
+    ("Module 1", "Predictive Analytics", COLORS["primary"],
+     ["Cancellation Prediction", "CLTV Modeling", "RFM Segmentation", "K-Means Clustering", "SHAP Explainability"]),
+    ("Module 2", "LLM & Unstructured Data", COLORS["accent"],
+     ["Invoice Classification", "Master Item Cleanup", "Sentiment Analysis", "Aspect-Level NLP"]),
+    ("Module 3", "Conversational AI", COLORS["info"],
+     ["NL-to-SQL Engine", "Intent Detection", "Insight Generation", "Auto Chart Builder"]),
+    ("Module 4", "MLOps & Monitoring", COLORS["success"],
+     ["MLflow Tracking", "Drift Detection", "Alert System", "Model Registry", "Health Score"]),
+]
+
+arch_html = '<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; margin: 10px 0;">'
+for mod_id, mod_name, color, items in arch_modules:
+    items_html = "".join(f'<div style="font-size: 0.78rem; color: {COLORS["text_secondary"]}; padding: 2px 0;">◆ {item}</div>' for item in items)
+    arch_html += f'''
+    <div style="background: {COLORS["surface"]}; border: 1px solid {color}40; border-top: 3px solid {color};
+         border-radius: 8px; padding: 14px; text-align: center;">
+        <div style="font-size: 0.7rem; color: {color}; font-weight: 600; letter-spacing: 1px;">{mod_id.upper()}</div>
+        <div style="font-size: 0.9rem; color: {COLORS["text"]}; font-weight: 600; margin: 6px 0 10px;">{mod_name}</div>
+        {items_html}
+    </div>'''
+arch_html += '</div>'
+
+# Data & Infrastructure layers
+arch_html += f'''
+<div style="margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+    <div style="background: {COLORS["surface"]}; border: 1px solid {COLORS["border"]}; border-radius: 8px;
+         padding: 10px; text-align: center;">
+        <div style="font-size: 0.75rem; color: {COLORS["warning"]}; font-weight: 600;">DATA LAYER</div>
+        <div style="font-size: 0.8rem; color: {COLORS["text_secondary"]}; margin-top: 4px;">SQLite · Synthetic + Kaggle · 119K+ Records</div>
+    </div>
+    <div style="background: {COLORS["surface"]}; border: 1px solid {COLORS["border"]}; border-radius: 8px;
+         padding: 10px; text-align: center;">
+        <div style="font-size: 0.75rem; color: {COLORS["warning"]}; font-weight: 600;">INFRASTRUCTURE</div>
+        <div style="font-size: 0.8rem; color: {COLORS["text_secondary"]}; margin-top: 4px;">Docker · GitHub Actions CI · MLflow Server</div>
     </div>
 </div>
-""", unsafe_allow_html=True)
+'''
+
+st.markdown(arch_html, unsafe_allow_html=True)
 
 # ─────────────── Sidebar Footer ───────────────
 sidebar_info()

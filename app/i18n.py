@@ -1,5 +1,5 @@
 """
-Internationalization (i18n) — EN / TR / DE
+Internationalization (i18n) — EN / TR / DE / NO
 
 Simple dictionary-based translation system for the Streamlit UI.
 """
@@ -10,21 +10,25 @@ TRANSLATIONS = {
         "en": "Hotel Intelligence Platform",
         "tr": "Otel Zeka Platformu",
         "de": "Hotel Intelligence Plattform",
+        "no": "Hotel Intelligence Plattform",
     },
     "app_subtitle": {
         "en": "End-to-end AI/ML platform for hospitality analytics",
         "tr": "Konaklama analitiği için uçtan uca AI/ML platformu",
         "de": "End-to-End AI/ML-Plattform fuer Hospitality-Analytik",
+        "no": "Ende-til-ende AI/ML-plattform for gjestfrihet-analyse",
     },
     "language": {
         "en": "Language",
         "tr": "Dil",
         "de": "Sprache",
+        "no": "Spraak",
     },
     "nav_home": {
         "en": "Home",
         "tr": "Ana Sayfa",
         "de": "Startseite",
+        "no": "Hjem",
     },
 
     # ─────────────── Home Page ───────────────
@@ -32,21 +36,25 @@ TRANSLATIONS = {
         "en": "Predictive analytics, LLM-powered unstructured data processing, conversational AI, and production MLOps — all in one platform.",
         "tr": "Tahminsel analitik, LLM destekli yapilandirilmamis veri isleme, konusmaya dayali yapay zeka ve uretim MLOps — hepsi tek platformda.",
         "de": "Praediktive Analytik, LLM-gestuetzte unstrukturierte Datenverarbeitung, Konversations-KI und Produktions-MLOps — alles auf einer Plattform.",
+        "no": "Prediktiv analyse, LLM-drevet ustrukturert databehandling, samtale-AI og produksjons-MLOps — alt i en plattform.",
     },
     "explore_modules": {
         "en": "Explore Modules",
         "tr": "Modulleri Kesfet",
         "de": "Module Erkunden",
+        "no": "Utforsk Moduler",
     },
     "tech_stack": {
         "en": "Tech Stack",
         "tr": "Teknoloji Yigini",
         "de": "Tech-Stack",
+        "no": "Teknologistabel",
     },
     "architecture": {
         "en": "Architecture",
         "tr": "Mimari",
         "de": "Architektur",
+        "no": "Arkitektur",
     },
 
     # ─────────────── Module Names ───────────────
@@ -54,41 +62,49 @@ TRANSLATIONS = {
         "en": "Predictive Analytics",
         "tr": "Tahminsel Analitik",
         "de": "Praediktive Analytik",
+        "no": "Prediktiv Analyse",
     },
     "mod1_desc": {
         "en": "Booking cancellation prediction, CLTV modeling, and customer segmentation with XGBoost, BG-NBD, and K-Means.",
         "tr": "XGBoost, BG-NBD ve K-Means ile rezervasyon iptal tahmini, CLTV modelleme ve musteri segmentasyonu.",
         "de": "Buchungsstornierungsvorhersage, CLTV-Modellierung und Kundensegmentierung mit XGBoost, BG-NBD und K-Means.",
+        "no": "Bestillingskanselleringsforutsigelse, CLTV-modellering og kundesegmentering med XGBoost, BG-NBD og K-Means.",
     },
     "mod2_title": {
         "en": "LLM & Unstructured Data",
         "tr": "LLM ve Yapilandirilmamis Veri",
         "de": "LLM & Unstrukturierte Daten",
+        "no": "LLM & Ustrukturerte Data",
     },
     "mod2_desc": {
         "en": "Invoice classification, master item cleanup with fuzzy matching, and multi-layer sentiment analysis.",
         "tr": "Fatura siniflandirma, bulanik esleme ile ana oge temizligi ve cok katmanli duygu analizi.",
         "de": "Rechnungsklassifizierung, Stammdatenbereinigung mit Fuzzy-Matching und mehrschichtige Sentimentanalyse.",
+        "no": "Fakturaklassifisering, stamdata-opprydding med fuzzy-matching og flerlagssentimentanalyse.",
     },
     "mod3_title": {
         "en": "Conversational AI",
         "tr": "Konusmaya Dayali Yapay Zeka",
         "de": "Konversations-KI",
+        "no": "Samtale-AI",
     },
     "mod3_desc": {
         "en": "Natural language to SQL chatbot with intent detection, auto-visualization, and business insights.",
         "tr": "Niyet algilama, otomatik gorsellestirme ve is icgoerueleri ile dogal dilden SQL'e chatbot.",
         "de": "Natural-Language-zu-SQL-Chatbot mit Intent-Erkennung, Auto-Visualisierung und Business-Insights.",
+        "no": "Naturlig spraak til SQL-chatbot med intensjonsdeteksjon, autovisualisering og forretningsinnsikt.",
     },
     "mod4_title": {
         "en": "MLOps & Monitoring",
         "tr": "MLOps ve Izleme",
         "de": "MLOps & Monitoring",
+        "no": "MLOps & Overvaaking",
     },
     "mod4_desc": {
         "en": "MLflow experiment tracking, model registry, data/model drift detection, and alerting system.",
         "tr": "MLflow deney takibi, model kayit defteri, veri/model sapma tespiti ve uyari sistemi.",
         "de": "MLflow-Experimentverfolgung, Modellregistrierung, Daten-/Modelldrifterkennung und Alarmsystem.",
+        "no": "MLflow-eksperimentsporing, modellregister, data-/modelldriftdeteksjon og varslingssystem.",
     },
 
     # ─────────────── KPI Labels ───────────────
@@ -96,31 +112,37 @@ TRANSLATIONS = {
         "en": "Total Bookings",
         "tr": "Toplam Rezervasyon",
         "de": "Gesamtbuchungen",
+        "no": "Totale Bestillinger",
     },
     "cancel_rate": {
         "en": "Cancellation Rate",
         "tr": "Iptal Orani",
         "de": "Stornierungsrate",
+        "no": "Kanselleringsrate",
     },
     "total_customers": {
         "en": "Total Customers",
         "tr": "Toplam Musteri",
         "de": "Gesamtkunden",
+        "no": "Totale Kunder",
     },
     "ml_models": {
         "en": "ML Models",
         "tr": "ML Modelleri",
         "de": "ML-Modelle",
+        "no": "ML-Modeller",
     },
     "best_auc": {
         "en": "Best AUC-ROC",
         "tr": "En Iyi AUC-ROC",
         "de": "Bester AUC-ROC",
+        "no": "Beste AUC-ROC",
     },
     "avg_revenue": {
         "en": "Avg. Revenue",
         "tr": "Ort. Gelir",
         "de": "Durchschn. Umsatz",
+        "no": "Gj.snitt Inntekt",
     },
 
     # ─────────────── Cancellation Page ───────────────
@@ -128,31 +150,37 @@ TRANSLATIONS = {
         "en": "Booking Cancellation Predictor",
         "tr": "Rezervasyon Iptal Tahmincisi",
         "de": "Buchungsstornierung Vorhersage",
+        "no": "Bestillingskanselleringsforutsiger",
     },
     "cancel_desc": {
         "en": "Predict whether a booking will be canceled using machine learning models.",
         "tr": "Makine ogrenimi modelleri kullanarak bir rezervasyonun iptal edilip edilmeyecegini tahmin edin.",
         "de": "Vorhersage, ob eine Buchung storniert wird, mithilfe von ML-Modellen.",
+        "no": "Forutsi om en bestilling vil bli kansellert ved hjelp av maskinlaeringsmodeller.",
     },
     "model_comparison": {
         "en": "Model Comparison",
         "tr": "Model Karsilastirmasi",
         "de": "Modellvergleich",
+        "no": "Modellsammenligning",
     },
     "feature_importance": {
         "en": "Feature Importance",
         "tr": "Ozellik Onemi",
         "de": "Feature-Wichtigkeit",
+        "no": "Funksjonsviktighet",
     },
     "live_prediction": {
         "en": "Live Prediction",
         "tr": "Canli Tahmin",
         "de": "Live-Vorhersage",
+        "no": "Live Forutsigelse",
     },
     "business_impact": {
         "en": "Business Impact",
         "tr": "Is Etkisi",
         "de": "Geschaeftsauswirkung",
+        "no": "Forretningspavirkning",
     },
 
     # ─────────────── Customer Intelligence ───────────────
@@ -160,21 +188,25 @@ TRANSLATIONS = {
         "en": "Customer Intelligence",
         "tr": "Musteri Zekasi",
         "de": "Kundenintelligenz",
+        "no": "Kundeintelligens",
     },
     "rfm_analysis": {
         "en": "RFM Analysis",
         "tr": "RFM Analizi",
         "de": "RFM-Analyse",
+        "no": "RFM-Analyse",
     },
     "cltv_prediction": {
         "en": "CLTV Prediction",
         "tr": "CLTV Tahmini",
         "de": "CLTV-Vorhersage",
+        "no": "CLTV-Forutsigelse",
     },
     "clustering": {
         "en": "Customer Clustering",
         "tr": "Musteri Kumeleme",
         "de": "Kundensegmentierung",
+        "no": "Kundesegmentering",
     },
 
     # ─────────────── Invoice Classifier ───────────────
@@ -182,16 +214,19 @@ TRANSLATIONS = {
         "en": "Invoice Classifier",
         "tr": "Fatura Siniflandirici",
         "de": "Rechnungsklassifizierer",
+        "no": "Fakturaklassifiserer",
     },
     "rule_based": {
         "en": "Rule-Based",
         "tr": "Kural Tabanli",
         "de": "Regelbasiert",
+        "no": "Regelbasert",
     },
     "llm_powered": {
         "en": "LLM-Powered",
         "tr": "LLM Destekli",
         "de": "LLM-gestuetzt",
+        "no": "LLM-Drevet",
     },
 
     # ─────────────── Review Analyzer ───────────────
@@ -199,16 +234,19 @@ TRANSLATIONS = {
         "en": "Review Analyzer",
         "tr": "Yorum Analizcisi",
         "de": "Bewertungsanalyse",
+        "no": "Anmeldelseanalysator",
     },
     "sentiment_dist": {
         "en": "Sentiment Distribution",
         "tr": "Duygu Dagilimi",
         "de": "Sentimentverteilung",
+        "no": "Sentimentfordeling",
     },
     "aspect_analysis": {
         "en": "Aspect Analysis",
         "tr": "Boyut Analizi",
         "de": "Aspektanalyse",
+        "no": "Aspektanalyse",
     },
 
     # ─────────────── Chatbot ───────────────
@@ -216,16 +254,19 @@ TRANSLATIONS = {
         "en": "Analytics Chatbot",
         "tr": "Analitik Chatbot",
         "de": "Analytik-Chatbot",
+        "no": "Analyse-Chatbot",
     },
     "chat_placeholder": {
         "en": "Ask a question about your hotel data...",
         "tr": "Otel verileriniz hakkinda bir soru sorun...",
         "de": "Stellen Sie eine Frage zu Ihren Hoteldaten...",
+        "no": "Still et spoersmaal om hotelldataene dine...",
     },
     "chat_examples": {
         "en": "Example Questions",
         "tr": "Ornek Sorular",
         "de": "Beispielfragen",
+        "no": "Eksempelspoerrsmaal",
     },
 
     # ─────────────── MLOps ───────────────
@@ -233,26 +274,31 @@ TRANSLATIONS = {
         "en": "MLOps Monitor",
         "tr": "MLOps Izleyici",
         "de": "MLOps-Monitor",
+        "no": "MLOps-Monitor",
     },
     "health_score": {
         "en": "Health Score",
         "tr": "Saglik Puani",
         "de": "Gesundheitswert",
+        "no": "Helsescore",
     },
     "data_drift": {
         "en": "Data Drift",
         "tr": "Veri Sapmasi",
         "de": "Datendrift",
+        "no": "Datadrift",
     },
     "model_performance": {
         "en": "Model Performance",
         "tr": "Model Performansi",
         "de": "Modellleistung",
+        "no": "Modellytelse",
     },
     "alerts": {
         "en": "Alerts",
         "tr": "Uyarilar",
         "de": "Warnungen",
+        "no": "Varsler",
     },
 
     # ─────────────── Common ───────────────
@@ -260,36 +306,43 @@ TRANSLATIONS = {
         "en": "Loading...",
         "tr": "Yukleniyor...",
         "de": "Laden...",
+        "no": "Laster...",
     },
     "error": {
         "en": "An error occurred",
         "tr": "Bir hata olustu",
         "de": "Ein Fehler ist aufgetreten",
+        "no": "En feil oppstod",
     },
     "no_data": {
         "en": "No data available. Run the pipeline first.",
         "tr": "Veri mevcut degil. Oncelikle veri hattini calistirin.",
         "de": "Keine Daten verfuegbar. Fuehren Sie zuerst die Pipeline aus.",
+        "no": "Ingen data tilgjengelig. Kjoer pipelinen foerst.",
     },
     "download": {
         "en": "Download",
         "tr": "Indir",
         "de": "Herunterladen",
+        "no": "Last ned",
     },
     "filters": {
         "en": "Filters",
         "tr": "Filtreler",
         "de": "Filter",
+        "no": "Filtre",
     },
     "results": {
         "en": "Results",
         "tr": "Sonuclar",
         "de": "Ergebnisse",
+        "no": "Resultater",
     },
     "summary": {
         "en": "Summary",
         "tr": "Ozet",
         "de": "Zusammenfassung",
+        "no": "Sammendrag",
     },
 }
 
@@ -307,4 +360,9 @@ def get_lang(st_module=None) -> str:
     return "en"
 
 
-LANG_OPTIONS = {"🇬🇧 English": "en", "🇹🇷 Turkce": "tr", "🇩🇪 Deutsch": "de"}
+LANG_OPTIONS = {
+    "🇬🇧 English": "en",
+    "🇹🇷 Turkce": "tr",
+    "🇩🇪 Deutsch": "de",
+    "🇳🇴 Norsk": "no",
+}

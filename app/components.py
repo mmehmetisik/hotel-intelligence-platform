@@ -147,11 +147,14 @@ def sidebar_info():
     st.sidebar.markdown("---")
     st.sidebar.markdown(
         f"""
-        <div style="text-align: center; color: {COLORS['text_muted']}; font-size: 0.75rem;">
-            Built by <b>Mehmet Isik</b><br>
-            Data Scientist<br>
-            <a href="https://github.com/mmehmetisik/hotel-intelligence-platform"
-               style="color: {COLORS['primary']};">GitHub Repo</a>
+        <div style="text-align: center; color: {COLORS['text_muted']}; font-size: 0.75rem; line-height: 1.8;">
+            Built by <b>Mehmet ISIK</b><br>
+            Kaggle Grandmaster<br>
+            <a href="https://mehmetisik.dev" style="color: {COLORS['primary']};">Website</a> ·
+            <a href="https://www.linkedin.com/in/mehmetisik4601" style="color: {COLORS['primary']};">LinkedIn</a> ·
+            <a href="https://www.kaggle.com/mehmetisik" style="color: {COLORS['primary']};">Kaggle</a><br>
+            <a href="https://medium.com/@mmehmetisiken" style="color: {COLORS['primary']};">Medium</a> ·
+            <a href="https://github.com/mmehmetisik/hotel-intelligence-platform" style="color: {COLORS['primary']};">GitHub Repo</a>
         </div>
         """,
         unsafe_allow_html=True,
