@@ -40,6 +40,8 @@ if "last_chart" not in st.session_state:
     st.session_state.last_chart = None
 if "last_data" not in st.session_state:
     st.session_state.last_data = None
+if "pending_question" not in st.session_state:
+    st.session_state.pending_question = None
 
 # Try to init chatbot
 if st.session_state.chatbot is None:
@@ -69,6 +71,7 @@ example_questions = [
 for q in example_questions:
     if st.sidebar.button(q, key=f"ex_{hash(q)}", use_container_width=True):
         st.session_state.chat_messages.append({"role": "user", "content": q})
+        st.session_state.pending_question = q
 
 # ─── Split Layout ───
 chat_col, viz_col = st.columns([1, 1])
@@ -94,8 +97,15 @@ with chat_col:
     # Chat input
     user_input = st.chat_input(t("chat_placeholder", lang))
 
+    # Handle sidebar button click
+    if "pending_question" in st.session_state and st.session_state.pending_question:
+        user_input = st.session_state.pending_question
+        st.session_state.pending_question = None
+
     if user_input:
-        st.session_state.chat_messages.append({"role": "user", "content": user_input})
+        # Only add to messages if not already added by sidebar button
+        if not st.session_state.chat_messages or st.session_state.chat_messages[-1].get("content") != user_input:
+            st.session_state.chat_messages.append({"role": "user", "content": user_input})
 
         if chatbot_ready:
             with st.spinner("Analyzing..."):
