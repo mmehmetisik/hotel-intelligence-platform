@@ -70,3 +70,6 @@ credentials.json
 .cache/
 diskcache/
 catboost_info/
+
+# Claude Code
+.claude/
