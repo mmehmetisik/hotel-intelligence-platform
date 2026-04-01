@@ -71,5 +71,5 @@ credentials.json
 diskcache/
 catboost_info/
 
-# Claude Code
+# IDE / Tool configs
 .claude/
