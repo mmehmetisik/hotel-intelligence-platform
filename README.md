@@ -79,7 +79,7 @@ A comprehensive AI/ML platform designed for hotel chains, covering the full data
 
 ## Streamlit Dashboard
 
-Premium dark-themed dashboard with **Strawberry-inspired** color palette and **multi-language support** (EN/TR/DE/NO).
+Premium dark-themed dashboard with a vibrant color palette and **multi-language support** (EN/TR/DE/NO).
 
 ### Home — Platform Overview
 

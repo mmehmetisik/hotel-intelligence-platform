@@ -2,7 +2,7 @@
 Hotel Intelligence Platform — Main Entry Point
 
 Premium Streamlit multi-page dashboard with:
-- Strawberry-inspired dark theme
+- Premium dark theme
 - Multi-language support (EN/TR/DE)
 - 8 interactive pages across 4 AI/ML modules
 """

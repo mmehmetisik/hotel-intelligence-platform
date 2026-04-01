@@ -1,5 +1,5 @@
 """
-Premium Dark Theme — Strawberry-Inspired
+Premium Dark Theme
 
 Custom CSS that transforms Streamlit into a premium dashboard.
 Color palette inspired by hospitality warmth with professional dark tones.
@@ -9,7 +9,7 @@ Color palette inspired by hospitality warmth with professional dark tones.
 # ─────────────────── Color Palette ───────────────────
 
 COLORS = {
-    "primary": "#FF4B4B",       # Strawberry red-orange
+    "primary": "#FF4B4B",       # Warm red-orange
     "primary_light": "#FF6B6B",
     "primary_dark": "#CC3C3C",
     "secondary": "#1B1F3B",     # Deep navy
